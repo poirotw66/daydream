@@ -33,3 +33,11 @@ Chronological, append-only operational log.
 - 概念：[[concepts/雙軌個人架構]]、[[concepts/研究與知識合成]]、[[concepts/解說式輸出]]、[[concepts/貼圖商務自動化]]。
 - 實體：[[entities/notebooklm]]、[[entities/line-貼圖平台]]。
 - 更新 `wiki/index.md` Overview／目錄條目。
+
+## [2026-05-15] ingest | 0515.md + 桌球 Baseline PDF
+
+- 歸檔：`raw/sources/2026-05-15-ai-cup-參賽筆記.md`（`0515.md`）、`raw/sources/2026-ai-cup-桌球戰術-baseline-method.pdf` + `2026-ai-cup-桌球戰術-baseline-文稿.md`。
+- Sources：[[sources/2026-05-15-ai-cup-參賽筆記]]、[[sources/2026-ai-cup-桌球戰術-baseline]]。
+- Concepts：[[concepts/ai-cup-2026-參賽]]、[[concepts/桌球戰術時序預測]]、[[concepts/桌球-baseline-lstm-多任務]]、[[concepts/esg-永續承諾驗證任務]]。
+- Entities：[[entities/ai-cup-2026]]、[[entities/veripromise-esg4k]]、[[entities/ml-intern-參賽方法]]。
+- 更新 `wiki/index.md`。
