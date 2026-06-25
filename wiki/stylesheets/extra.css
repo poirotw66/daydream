@@ -111,6 +111,52 @@
   box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
 }
 
+/* Index — compact section grid */
+.dd-index-grid {
+  margin: 0.5rem 0 1.5rem;
+}
+
+.dd-index-grid > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 0.65rem 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.dd-index-grid > ul > li {
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--dd-border);
+  border-radius: var(--dd-radius);
+  background: var(--dd-surface);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.dd-index-grid > ul > li strong {
+  display: block;
+  margin-bottom: 0.15rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+/* Index tables — tighter than default */
+.md-typeset .md-content__inner > h2:first-of-type + table {
+  margin-top: 0.5rem;
+}
+
+.md-typeset table:not([class]) td:first-child {
+  white-space: nowrap;
+  width: 1%;
+  font-weight: 550;
+}
+
+.md-typeset table:not([class]) td:last-child {
+  color: var(--dd-text-muted);
+  font-size: 0.88rem;
+}
+
 /* OKF type badge + description (injected per page) */
 .dd-page-meta {
   display: flex;

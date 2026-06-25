@@ -88,3 +88,4 @@ Chronological, append-only operational log.
 * **Update**: `requirements-docs.txt` → `mkdocs-ng` 1.7+ + Material 9.7（維持 MkDocs 1.x，避開未穩定之 2.0）。
 * **Update**: CI 設 `NO_MKDOCS_2_WARNING=1`；`docs/mkdocs_hooks.py` 站內連結改相對路徑、`.github/` 改 GitHub blob URL。
 * **Update**: 自訂 logo `wiki/assets/daydream-logo.png`（192px，~72KB）；[wiki-guide](/wiki-guide.md) 補本機預覽說明。
+* **Update**: [index](/index.md) 精簡首頁 — Hero 主軌卡片 + 入門連結 + 分區摘要；完整條目改由頂部導覽承載。

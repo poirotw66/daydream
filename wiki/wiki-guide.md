@@ -55,6 +55,8 @@ NO_MKDOCS_2_WARNING=1 mkdocs serve
 
 - `push` 至 `main` 時，[`.github/workflows/deploy-wiki-pages.yml`](../.github/workflows/deploy-wiki-pages.yml) 自動部署。
 - 首次請在 GitHub repo **Settings → Pages → Build and deployment → Source: GitHub Actions**。
+- 若 CI 出現 `Failed to create deployment (status: 404)`，代表 Pages 尚未啟用或 Source 不是 **GitHub Actions**；完成上述設定後到 **Actions** 重跑 **Deploy wiki to GitHub Pages**。
+- `Node 20 is being deprecated` 為 runner 提示，與此 404 無關；`deploy-pages@v4` 已跑在 Node 24。
 
 ### 站點 UX（僅 GitHub Pages）
 

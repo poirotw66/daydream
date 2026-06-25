@@ -156,7 +156,6 @@ def on_page_markdown(markdown: str, page, config, files) -> str:
     markdown = _strip_frontmatter(markdown)
 
     if page_uri == "index.md":
-        markdown = markdown.replace("# Overview\n\n", "## 快速導覽\n\n", 1)
         markdown = _index_hero() + markdown
 
     header = _page_header(meta)
