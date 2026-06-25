@@ -3,7 +3,7 @@ type: Playbook
 title: "daydream Wiki 入門與工作流"
 description: "個人 wiki 怎麼用、雙軌／三線、Ingest 與 OKF 常見問題"
 tags: ["faq"]
-timestamp: 2026-06-25T12:00:00Z
+timestamp: 2026-06-25T00:00:00Z
 status: active
 source_count: 0
 ---
@@ -26,48 +26,46 @@ source_count: 0
 - [index](/index.md)
 - [雙軌個人架構](/concepts/雙軌個人架構.md)
 
-### 2. 「雙軌」與 2026-06 的「三線」差在哪？
+### 2. 「雙軌」與求職主線怎麼對齊？
 
-**Short Answer：** 雙軌是知識 vs 變現產品；三線是 2026-06 後在變現軌內再拆求職主砲、變現、知識的**時間**配置。
+**Short Answer：** 雙軌仍是知識 vs 變現產品；**2026-06-25** 起求職主軸改為**場內 Agent 案子**（正職）+ **bloss0m 公開作品**（side），AI CUP 已結案。
 
-**Detailed Answer：** [雙軌個人架構](/concepts/雙軌個人架構.md) 定義知識處理與貼圖／內容農場產品脈絡。[年底轉職 Agent 準備](/concepts/年底轉職-agent-準備.md) 將 ml-intern+bloss0m、recipe 農場、知識合成列為三線並行。
+**Detailed Answer：** [雙軌個人架構](/concepts/雙軌個人架構.md) 定義知識與變現脈絡。[年底轉職 Agent 準備](/concepts/年底轉職-agent-準備.md) 與 [現職場內 Agent 案子](/concepts/現職場內-agent-案子.md) 收斂轉職方向為 Agent 開發／應用。
 
 **Related Pages：**
 - [內容農場變現軌](/concepts/內容農場變現軌.md)
-- [年底轉職 Agent 準備](/concepts/年底轉職-agent-準備.md)
+- [主線重定義 2026-06-25](/sources/2026-06-25-主線重定義-agent職涯.md)
 
 ### 3. 平日 4 小時建議怎麼切？
 
-**Short Answer：** 常態週約 2h ml-intern、1.5h recipe 農場、30min 收斂（發想／bloss0m 短文／PR）。
+**Short Answer：** **2026-06-25 起**：~1.5h Kaggle／ml-intern、~1.5h 金融 Agent side、~1h 每日 blog、~15min 金融 Agent 發想；場內案子用正職時間。
 
-**Detailed Answer：** 見 [年底轉職 Agent 準備](/concepts/年底轉職-agent-準備.md) 時間表；賽季週可提高 ml-intern+競賽至約 14h。（確定）[2026-06-03 年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+**Detailed Answer：** 見 [年底轉職 Agent 準備](/concepts/年底轉職-agent-準備.md)。內容農場已收尾；李宏毅深讀時段待排。
+
+**Related Pages：**
+- [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)
+- [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md)
+
+### 4. ML-Intern / Autoresearch 還要做嗎？
+
+**Short Answer：** **要**；與 [autoresearch](/entities/autoresearch.md) 並行，從 [Kaggle](/entities/kaggle.md) 經典賽重新啟動。
+
+**Detailed Answer：** 見 [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)。AI CUP 已結案，eval 思路可延續到 #001 或 bloss0m。
 
 **Related Pages：**
 - [ML-Intern 參賽方法](/entities/ml-intern-參賽方法.md)
 
-### 4. ML-Intern 方法是什麼？
+### 5. recipe.bloss0m.com 還維運嗎？
 
-**Short Answer：** AI CUP 2026 的參賽取向；2026-06 起落地為可重現 **skill／harness**（baseline、指標、一鍵重跑）。
+**Short Answer：** **暫時收尾**（2026-06-25）；不再佔 side 時間，頁面保留歷史。
 
-**Detailed Answer：** 名稱來自 [2026-05-15 AI CUP 參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)；具體 subcommand 與 SOP 仍標（未知）。可與 [#001 Eval Kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) 合流。
+**Detailed Answer：** [內容農場變現軌](/concepts/內容農場變現軌.md) 標 `needs-review`；[recipe.bloss0m.com](/entities/recipe-bloss0m-com.md) 站點狀態不變、主動投入暫停。
 
-**Related Pages：**
-- [AI CUP 2026 參賽](/concepts/ai-cup-2026-參賽.md)
+### 6. AI CUP 2026 現在什麼狀態？
 
-### 5. recipe.bloss0m.com 與貼圖商務的關係？
+**Short Answer：** 個人參賽階段**已告一段落**（2026-06-25）；桌球 + ESG 相關頁面保留作歷史參考。
 
-**Short Answer：** 同屬變現軌、產品形態不同（SEO 站 vs LINE 貼圖）；品牌流量是否共用尚未定。
-
-**Detailed Answer：** [內容農場變現軌](/concepts/內容農場變現軌.md) 對照表；[recipe.bloss0m.com](/entities/recipe-bloss0m-com.md) 與 [LINE 貼圖平台](/entities/line-貼圖平台.md) 為兩個終點。
-
-**Related Pages：**
-- [貼圖商務自動化](/concepts/貼圖商務自動化.md)
-
-### 6. AI CUP 2026 我參哪兩場？
-
-**Short Answer：** 桌球戰術時序預測 + ESG 永續承諾驗證（VeriPromiseESG4K）。
-
-**Detailed Answer：** [AI CUP 2026 參賽](/concepts/ai-cup-2026-參賽.md)；桌球 Baseline 見 [官方 LSTM 簡報](/sources/2026-ai-cup-桌球戰術-baseline.md)；ESG 四子任務見 [ESG 永續承諾驗證任務](/concepts/esg-永續承諾驗證任務.md)。
+**Detailed Answer：** [AI CUP 2026 參賽](/concepts/ai-cup-2026-參賽.md) 標為 `needs-review`；主線見 [主線重定義 2026-06-25](/sources/2026-06-25-主線重定義-agent職涯.md)。
 
 **Related Pages：**
 - [桌球 Baseline LSTM 多任務](/concepts/桌球-baseline-lstm-多任務.md)

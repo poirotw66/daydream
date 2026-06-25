@@ -89,3 +89,25 @@ Chronological, append-only operational log.
 * **Update**: CI 設 `NO_MKDOCS_2_WARNING=1`；`docs/mkdocs_hooks.py` 站內連結改相對路徑、`.github/` 改 GitHub blob URL。
 * **Update**: 自訂 logo `wiki/assets/daydream-logo.png`（192px，~72KB）；[wiki-guide](/wiki-guide.md) 補本機預覽說明。
 * **Update**: [index](/index.md) 精簡首頁 — Hero 主軌卡片 + 入門連結 + 分區摘要；完整條目改由頂部導覽承載。
+
+## [2026-06-25] ingest | 主線重定義：Agent 職涯
+
+* **Archive**: `raw/sources/2026-06-25-主線重定義-agent職涯.md`
+* **Creation**: [主線重定義 Agent 職涯](/sources/2026-06-25-主線重定義-agent職涯.md)、[現職場內 Agent 案子](/concepts/現職場內-agent-案子.md)
+* **Update**: [年底轉職 Agent 準備](/concepts/年底轉職-agent-準備.md) — 鎖定 Agent 開發／應用；場內案子 + bloss0m；廢止 ml-intern 時間主軸
+* **Update**: [AI CUP 2026 參賽](/concepts/ai-cup-2026-參賽.md)、[ML-Intern 參賽方法](/entities/ml-intern-參賽方法.md) → 已結案／`needs-review`
+* **Update**: FAQ、首頁 Hero
+* **Update**: 根目錄 [README.md](../README.md) — daydream 入門、現行主軸、連結與 MkDocs 預覽
+
+## [2026-06-25] ingest | 學習與 side 主軸第二調整
+
+* **Archive**: `raw/sources/2026-06-25-學習與-side-主軸調整.md`
+* **Creation**: [學習與 side 主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)；concepts — [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)、[金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md)、[每日資訊收集-agent](/concepts/每日資訊收集-agent.md)、[每日技術前沿-blog](/concepts/每日技術前沿-blog.md)、[李宏毅課程論文深讀](/concepts/李宏毅課程論文深讀.md)
+* **Creation**: entities — [kaggle](/entities/kaggle.md)、[autoresearch](/entities/autoresearch.md)、[李宏毅-課程](/entities/李宏毅-課程.md)、[cursor-superpowers](/entities/cursor-superpowers.md)
+* **Update**: [內容農場變現軌](/concepts/內容農場變現軌.md)、[recipe-bloss0m-com](/entities/recipe-bloss0m-com.md) → 暫時收尾；[ml-intern-參賽方法](/entities/ml-intern-參賽方法.md) 重啟；[年底轉職-agent-準備](/concepts/年底轉職-agent-準備.md)、Hero、README、query、FAQ
+
+## [2026-06-25] query | Kaggle 路徑 survey + autoresearch 對齊
+
+* **Archive**: `raw/sources/2026-06-25-kaggle路徑與輸出分工.md`
+* **Creation**: [Kaggle 路徑與輸出分工](/sources/2026-06-25-kaggle路徑與輸出分工.md)、[kaggle-經典賽與學習路徑](/queries/kaggle-經典賽與學習路徑.md)
+* **Update**: [autoresearch](/entities/autoresearch.md) → [karpathy/autoresearch](https://github.com/karpathy/autoresearch)；blog／side 並存分工

@@ -1,6 +1,6 @@
 # MkDocs site for wiki/ → GitHub Pages (https://poirotw66.github.io/daydream/)
 site_name: daydream Wiki
-site_description: 個人 OKF v0.1 知識庫 — 雙軌構思、AI CUP、內容農場與轉職筆記
+site_description: 個人 OKF v0.1 知識庫 — Agent 職涯、Kaggle 實驗、金融 Agent 與每日技術 blog
 site_url: https://poirotw66.github.io/daydream/
 repo_url: https://github.com/poirotw66/daydream
 repo_name: poirotw66/daydream
@@ -105,6 +105,12 @@ nav:
       - 桌球 Baseline LSTM: concepts/桌球-baseline-lstm-多任務.md
       - ESG 永續承諾驗證: concepts/esg-永續承諾驗證任務.md
       - 年底轉職 Agent 準備: concepts/年底轉職-agent-準備.md
+      - 現職場內 Agent 案子: concepts/現職場內-agent-案子.md
+      - ML-Intern × Autoresearch: concepts/ml-intern-autoresearch-路線.md
+      - 金融業 AI Agent 發想: concepts/金融業-ai-agent-side-發想.md
+      - 每日資訊收集 Agent: concepts/每日資訊收集-agent.md
+      - 每日技術前沿 Blog: concepts/每日技術前沿-blog.md
+      - 李宏毅課程論文深讀: concepts/李宏毅課程論文深讀.md
   - Entities:
       - bloss0m.com: entities/bloss0m-com.md
       - 國泰金控 AI 架構師: entities/國泰金控-ai-架構師.md
@@ -114,14 +120,22 @@ nav:
       - AI CUP 2026: entities/ai-cup-2026.md
       - VeriPromiseESG4K: entities/veripromise-esg4k.md
       - ML-Intern 參賽方法: entities/ml-intern-參賽方法.md
+      - Kaggle: entities/kaggle.md
+      - Autoresearch: entities/autoresearch.md
+      - 李宏毅課程: entities/李宏毅-課程.md
+      - Cursor Superpowers: entities/cursor-superpowers.md
   - Sources:
       - 2026-05-15 個人雙軌構思: sources/2026-05-15-個人雙軌構思.md
       - 2026-05-15 AI CUP 參賽筆記: sources/2026-05-15-ai-cup-參賽筆記.md
       - 桌球戰術 Baseline: sources/2026-ai-cup-桌球戰術-baseline.md
       - recipe.bloss0m 內容農場: sources/2026-06-03-recipe-bloss0m-內容農場.md
       - 年底轉職與時間配置: sources/2026-06-03-年底轉職與時間配置.md
+      - 主線重定義 Agent 職涯: sources/2026-06-25-主線重定義-agent職涯.md
+      - 學習與 side 主軸調整: sources/2026-06-25-學習與-side-主軸調整.md
+      - Kaggle 路徑與輸出分工: sources/2026-06-25-kaggle路徑與輸出分工.md
   - Queries:
-      - 平日時間與三線並行: queries/平日時間與三線並行.md
+      - 平日時間與主線: queries/平日時間與三線並行.md
+      - Kaggle 經典賽路徑: queries/kaggle-經典賽與學習路徑.md
   - FAQ:
       - 入門與工作流: faq/daydream-入門與工作流.md
   - Meta:

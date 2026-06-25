@@ -7,8 +7,9 @@ okf_version: "0.1"
 | | |
 | --- | --- |
 | [Wiki 說明](/wiki-guide.md) | 目錄結構、Ingest、GitHub Pages 預覽 |
-| [入門與工作流 FAQ](/faq/daydream-入門與工作流.md) | 雙軌、三線並行、OKF 慣例（12 題） |
-| [平日時間與三線並行](/queries/平日時間與三線並行.md) | 常態週 ml-intern／農場／bloss0m 切塊 |
+| [入門與工作流 FAQ](/faq/daydream-入門與工作流.md) | Agent 職涯主線、Ingest、OKF 慣例（12 題） |
+| [平日時間與主線怎麼排？](/queries/平日時間與三線並行.md) | Kaggle 實驗、金融 Agent、每日 blog |
+| [Kaggle 經典賽與學習路徑？](/queries/kaggle-經典賽與學習路徑.md) | Titanic → House Prices → 金融 fraud 銜接 |
 
 ## 規約與維護
 
@@ -25,10 +26,10 @@ okf_version: "0.1"
 
 <div class="dd-index-grid" markdown>
 
-- :material-lightbulb-outline: **Concepts** — 10 個概念（雙軌、AI CUP、內容農場、轉職…）
-- :material-database-outline: **Entities** — 8 個實體（工具、平台、職缺標的…）
-- :material-file-document-outline: **Sources** — 5 份歸檔來源
+- :material-lightbulb-outline: **Concepts** — 16 個概念（Agent 職涯、Kaggle 實驗、李宏毅深讀…）
+- :material-database-outline: **Entities** — 12 個實體
+- :material-file-document-outline: **Sources** — 7 份歸檔來源
 - :material-rocket-launch-outline: **Projects** — 1 個候選 side project
-- :material-help-circle-outline: **FAQ / Queries** — 可重用問答
+- :material-help-circle-outline: **FAQ / Queries** — 可重用問答（含 Kaggle 路徑）
 
 </div>

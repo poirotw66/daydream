@@ -9,7 +9,7 @@ source_count: 1
 ---
 # #001 Agentic RAG Eval Kit
 
-> 定稿日：2026-06-03｜狀態：**候選池**（每週至多 1 實作；可併入 [ml-intern-參賽方法](/entities/ml-intern-參賽方法.md) 或獨立 PR）
+> 定稿日：2026-06-03｜狀態：**候選池**（每週至多 1 實作；優先併入 bloss0m 公開作品，可參考 ML-Intern 期 harness 思路）
 
 ## 一句話
 

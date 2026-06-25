@@ -1,4 +1,4 @@
-# LLM Wiki（llm-wiki-example）
+# LLM Wiki（daydream）
 
 Persistent, LLM-maintained knowledge base in markdown；`wiki/` 為 [OKF v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf) Knowledge Bundle（規約見 repo 根目錄 **AGENTS.md**）。
 
@@ -60,7 +60,7 @@ NO_MKDOCS_2_WARNING=1 mkdocs serve
 
 ### 站點 UX（僅 GitHub Pages）
 
-- **首頁 Hero**：四張主軌卡片（雙軌／AI CUP／內容農場／轉職）。
+- **首頁 Hero**：轉職／場內案子／Kaggle 實驗／每日輸出。
 - **OKF 標籤**：每頁顯示 `Concept`／`Entity`／`Source` 等類型與 `description` 摘要。
 - **頂部 Tabs**：Concepts、Entities、Sources… 一鍵切換。
 - **標籤雲**：frontmatter `tags` 可點選篩選。

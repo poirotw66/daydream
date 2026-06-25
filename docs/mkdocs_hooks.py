@@ -106,41 +106,41 @@ def _index_hero() -> str:
 
 # daydream Wiki
 
-<p class="dd-hero__subtitle">個人 OKF v0.1 知識庫 — 雙軌構思、AI CUP、內容農場與年底轉職，一頁收斂。</p>
+<p class="dd-hero__subtitle">Agent 職涯 — 場內案子、Kaggle 實驗、金融 Agent 發想、每日技術 blog。</p>
 
 <div class="grid cards" markdown>
-
-- :material-graph-outline:{ .lg .middle } **雙軌架構**
-
-    ---
-
-    知識合成 × 貼圖／變現商務
-
-    [:octicons-arrow-right-24: 進入](/concepts/雙軌個人架構.md)
-
-- :material-trophy:{ .lg .middle } **AI CUP 2026**
-
-    ---
-
-    桌球時序預測 + ESG 四任務
-
-    [:octicons-arrow-right-24: 進入](/concepts/ai-cup-2026-參賽.md)
-
-- :material-web:{ .lg .middle } **內容農場**
-
-    ---
-
-    recipe.bloss0m SEO → AdSense
-
-    [:octicons-arrow-right-24: 進入](/concepts/內容農場變現軌.md)
 
 - :material-briefcase-account:{ .lg .middle } **年底轉職**
 
     ---
 
-    Agent 職缺 · 平日 4h · ml-intern
+    AI agent 開發／應用
 
     [:octicons-arrow-right-24: 進入](/concepts/年底轉職-agent-準備.md)
+
+- :material-domain:{ .lg .middle } **場內案子**
+
+    ---
+
+    國泰 · 企業級 Agent
+
+    [:octicons-arrow-right-24: 進入](/concepts/現職場內-agent-案子.md)
+
+- :material-chart-timeline-variant:{ .lg .middle } **Kaggle 實驗**
+
+    ---
+
+    ml-intern × autoresearch
+
+    [:octicons-arrow-right-24: 進入](/concepts/ml-intern-autoresearch-路線.md)
+
+- :material-newspaper-variant-outline:{ .lg .middle } **每日輸出**
+
+    ---
+
+    技術前沿 blog · 資訊 agent
+
+    [:octicons-arrow-right-24: 進入](/concepts/每日技術前沿-blog.md)
 
 </div>
 

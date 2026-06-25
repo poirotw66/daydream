@@ -1,71 +1,75 @@
 ---
 type: Concept
 title: "年底轉職（Agent 職缺）準備"
-description: "2026 年底前轉職，優先 AI agent 職缺；平日約 4h，每日發想與每週一個可交付切片。"
+description: "2026 年底前轉職 Agent 開發／應用；場內案子 + Kaggle 實驗 + 金融 Agent 發想 + 每日 blog。"
 tags: ["轉職", "agent", "career", "side-project"]
-timestamp: 2026-06-03T00:00:00Z
+timestamp: 2026-06-25T12:00:00Z
 status: active
-source_count: 1
+source_count: 3
 ---
 # 年底轉職（Agent 職缺）準備
 
 ## Summary
 
-個人目標在 **2026 年底前** 轉職；職類**不設限**但優先 **AI agent** 相關。現職 [國泰金控-ai-架構師](/entities/國泰金控-ai-架構師.md)，對外以 [bloss0m-com](/entities/bloss0m-com.md) 驗證 Agent／RAG／上線能力；透過 **每日發想 + 每週 1 個可交付切片** 補公開故事與時事深度。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+個人目標在 **2026 年底前** 轉職；職類為 **AI agent 開發**或 **AI agent 應用**。（確定）[2026-06-25-主線重定義-agent職涯](/sources/2026-06-25-主線重定義-agent職涯.md)
+
+**2026-06-25 最新主軸**（確定）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)：
+
+| 軌道 | 內容 |
+|------|------|
+| 正職 | [現職場內-agent-案子](/concepts/現職場內-agent-案子.md) |
+| 實驗 | [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md) | Kaggle [Titanic](https://www.kaggle.com/competitions/titanic) 起手 → [路徑](/queries/kaggle-經典賽與學習路徑.md) |
+| 輸入 | [每日資訊收集-agent](/concepts/每日資訊收集-agent.md) |
+| 輸出 | [每日技術前沿-blog](/concepts/每日技術前沿-blog.md) | **科技前沿**（廣義）on [bloss0m-com](/entities/bloss0m-com.md) |
+| Side | [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md) | **金融 Agent**（垂直）；與 blog **並存** |
+| 工具 | [cursor-superpowers](/entities/cursor-superpowers.md) | side 實作 skill 工作流 |
+| 學習 | [李宏毅課程論文深讀](/concepts/李宏毅課程論文深讀.md) |
+| 收尾 | [內容農場變現軌](/concepts/內容農場變現軌.md) **暫停** |
 
 ## Key Points
 
-### 時間（平日為主）
+### 平日 side（約 4h，推測）
 
 | 區塊 | 時長 | 內容 |
 |------|------|------|
-| 深工 1 | 2h | [ml-intern-參賽方法](/entities/ml-intern-參賽方法.md) skill／AI CUP |
-| 深工 2 | 1.5h | [recipe-bloss0m-com](/entities/recipe-bloss0m-com.md)（[內容農場變現軌](/concepts/內容農場變現軌.md)） |
-| 收斂 | 30min | 發想 backlog／bloss0m 短文／本週 PR |
+| 深工 1 | ~1.5h | [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)／Kaggle |
+| 深工 2 | ~1.5h | 金融 Agent side 實作／#001／[每日資訊收集-agent](/concepts/每日資訊收集-agent.md) MVP |
+| 輸出 | ~1h | [每日技術前沿-blog](/concepts/每日技術前沿-blog.md) 撰寫 |
+| 發想 | ~15min | [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md) `#NNN` |
 
-- **平日**：約 **4h／天**；**假日**：少，僅維運或 deadline。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- **常態週**（約 20h 平日）：ml-intern 10h、內容農場 7h、收斂 3h。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- **賽季週**：ml-intern+競賽 14h、農場維持 3h、bloss0m 3h。（推測）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+- **李宏毅**深讀可併入深工或獨立晚間時段；尚未寫死。（推測）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
+- 正職場內案子不計入 4h。（確定）[2026-06-25-主線重定義-agent職涯](/sources/2026-06-25-主線重定義-agent職涯.md)
 
-### 每日發想規則
+### 發想規則（更新）
 
-- 每天 **~15min** 記 1 則（編號 `#NNN`）；**每週最多 1 則** 進入實作。
-- 評分維度（各 1～5）：求職相關、Agent 深度、7 天可交付、時事相關、與 bloss0m 差異化；**≥16/25** 才進候選池。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- 必須 **公開性 Yes**（無國泰資料）；優先延伸既有專案，不開第四條大產品線。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- **#001 定稿**：[2026-06-03-001-agentic-rag-eval-kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md)（候選池，22/25）。（確定）
-
-### 職類與敘事
-
-- 平台／編排、Agent 應用、研究工程（偏產品）、架構／Staff 皆可對齊現有作品。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- 內容農場對外講 **agentic 內容管線 + 可量測 SEO**，不當唯一求職主軸。（推測）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-
-### 三線並行（2026-06）
-
-1. **求職主砲**：ml-intern + bloss0m Agent 故事  
-2. **變現軌**：recipe 站 + 貼圖（[內容農場變現軌](/concepts/內容農場變現軌.md)）  
-3. **知識軌**：[研究與知識合成](/concepts/研究與知識合成.md)（時間讓位於前兩者時可縮）
+- 主題：**金融業相關 AI agent 應用**。（確定）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
+- 節奏與評分門檻沿用 2026-06-03 規則；須可完全公開。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
 
 ## Evidence
 
-- [2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+- [2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
+- [2026-06-25-主線重定義-agent職涯](/sources/2026-06-25-主線重定義-agent職涯.md)
+- [2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)（歷史）
 
 ## Open Questions
 
-- 目標公司／職稱清單與投遞節奏？（未知）
-- #001 已存於 [2026-06-03-001-agentic-rag-eval-kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md)；是否納入 ml-intern 第一版仍待排程。（未知）
-- 9 月／11 月作品集里程碑是否寫死日期？（未知）
+- 每日 blog 與每週 1 實作是否衝突？如何降級節奏？（未知）
+- 首個 Kaggle 賽、李宏毅課程季別？（未知）
 
 ## Relationships
 
+- related_to: [現職場內-agent-案子](/concepts/現職場內-agent-案子.md)
+- related_to: [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)
+- related_to: [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md)
+- related_to: [每日資訊收集-agent](/concepts/每日資訊收集-agent.md)
+- related_to: [每日技術前沿-blog](/concepts/每日技術前沿-blog.md)
+- related_to: [李宏毅課程論文深讀](/concepts/李宏毅課程論文深讀.md)
 - related_to: [bloss0m-com](/entities/bloss0m-com.md)
-- related_to: [ml-intern-參賽方法](/entities/ml-intern-參賽方法.md)
-- related_to: [國泰金控-ai-架構師](/entities/國泰金控-ai-架構師.md)
-- related_to: [ai-cup-2026-參賽](/concepts/ai-cup-2026-參賽.md)
 - related_to: [內容農場變現軌](/concepts/內容農場變現軌.md)
-- related_to: [雙軌個人架構](/concepts/雙軌個人架構.md)
-- related_to: [2026-06-03-001-agentic-rag-eval-kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md)
-- grounded_in: [2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+- grounded_in: [2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
 
 # Citations
 
-[1] [2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md) — `raw/sources/2026-06-03-年底轉職與時間配置.md`
+[1] [2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md) — `raw/sources/2026-06-25-學習與-side-主軸調整.md`
+[2] [2026-06-25-主線重定義-agent職涯](/sources/2026-06-25-主線重定義-agent職涯.md) — `raw/sources/2026-06-25-主線重定義-agent職涯.md`
+[3] [2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md) — `raw/sources/2026-06-03-年底轉職與時間配置.md`

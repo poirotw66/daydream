@@ -1,46 +1,43 @@
 ---
 type: Entity
 title: "ML-Intern 參賽方法"
-description: "AI CUP 2026 參賽取向 ML-Intern；2026-06 起以 skill 實作可重現 harness 與 eval。"
-tags: ["方法", "ai-cup", "skill"]
-timestamp: 2026-06-03T00:00:00Z
+description: "可重現 ML 實驗 harness；2026-06-25 起與 autoresearch、Kaggle 經典賽並行。"
+tags: ["方法", "kaggle", "skill", "experiment"]
+timestamp: 2026-06-25T12:00:00Z
 status: active
-source_count: 2
+source_count: 3
 ---
 # ML-Intern 參賽方法
 
 ## Summary
 
-AI CUP 2026 的個人參賽取向：**ML-Intern 方法**；2026-06 起以 **skill 實作中** 落地為可重現實驗／提交 **harness**（跟進 baseline、記錄指標、一鍵重跑），並支撐 [年底轉職-agent-準備](/concepts/年底轉職-agent-準備.md) 的 harness／eval 敘事。（確定）[2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)、[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+**ML-Intern 方法**原為 AI CUP 2026 參賽取向；自 **2026-06-25** 起納入 [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)，與 [autoresearch](/entities/autoresearch.md) 並行，從 [kaggle](/entities/kaggle.md) **經典競賽**重新啟動。（確定）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
 
 ## Key Points
 
-- 與 [ai-cup-2026-參賽](/concepts/ai-cup-2026-參賽.md) 綁定（桌球時序 + ESG）。（確定）[2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
-- **平日深工 1（約 2h）** 為主要投入區塊。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- **完成定義（規劃）**：至少一條賽道 end-to-end 最小流程 + README；可與 bloss0m「Harness 設計」文章互掛。（推測）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- 候選延伸：[2026-06-03-001-agentic-rag-eval-kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) 可併入 skill 或排在 MVP 之後。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+- 核心：baseline、harness、指標記錄、一鍵重跑。（確定）[2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
+- AI CUP 賽事已結案；Kaggle 取代賽季時間主軸。（確定）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
+- eval 思路可與 [#001 Eval Kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) 呼應。（推測）
 
 ## Evidence
 
-- 參賽筆記標題：[2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
-- skill 與時間配置：[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+- [2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
+- [2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
 
 ## Open Questions
 
-- skill 第一個要跑通的 subcommand（如 `run-baseline`）名稱？（未知）
-- ML-Intern 是否為校內／團隊內部流程名稱？（未知）[2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
-- 桌球／ESG 兩線資源如何分配？（未知）
+- 第一個 Kaggle 經典賽與 skill subcommand 命名？（未知）
 
 ## Relationships
 
+- related_to: [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)
+- related_to: [kaggle](/entities/kaggle.md)
+- related_to: [autoresearch](/entities/autoresearch.md)
 - related_to: [ai-cup-2026-參賽](/concepts/ai-cup-2026-參賽.md)
-- related_to: [ai-cup-2026](/entities/ai-cup-2026.md)
 - related_to: [年底轉職-agent-準備](/concepts/年底轉職-agent-準備.md)
-- related_to: [bloss0m-com](/entities/bloss0m-com.md)
-- related_to: [2026-06-03-001-agentic-rag-eval-kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md)
-- grounded_in: [2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
+- grounded_in: [2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
 
 # Citations
 
 [1] [2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md) — `raw/sources/2026-05-15-ai-cup-參賽筆記.md`
-[2] [2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md) — `raw/sources/2026-06-03-年底轉職與時間配置.md`
+[2] [2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md) — `raw/sources/2026-06-25-學習與-side-主軸調整.md`
