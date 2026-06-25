@@ -1,1 +1,3 @@
-mkdocs-material>=9.6,<10
+# MkDocs 1.x via community-maintained fork (mkdocs 1.6.1 on PyPI is stale)
+mkdocs-ng>=1.7.3,<2
+mkdocs-material>=9.7,<10

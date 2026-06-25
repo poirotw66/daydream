@@ -47,9 +47,11 @@ AGENTS.md     # repo 根目錄規約，以此為準
 
 ```bash
 pip install -r requirements-docs.txt
-mkdocs serve
+NO_MKDOCS_2_WARNING=1 mkdocs serve
 # → http://127.0.0.1:8000/daydream/
 ```
+
+- 建置棧：`mkdocs-ng` 1.7+（社群維護的 MkDocs 1.x fork）+ Material 9.7；**勿**升級至尚未穩定的 MkDocs 2.0。
 
 - `push` 至 `main` 時，[`.github/workflows/deploy-wiki-pages.yml`](../.github/workflows/deploy-wiki-pages.yml) 自動部署。
 - 首次請在 GitHub repo **Settings → Pages → Build and deployment → Source: GitHub Actions**。
