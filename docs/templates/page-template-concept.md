@@ -1,17 +1,16 @@
 ---
+type: Concept
 title: "<Page title>"
-type: concept
-status: draft
-updated: "YYYY-MM-DD"
-source_count: 0
+description: "<One-line summary>"
 tags: []
+timestamp: 2026-06-03T00:00:00Z
+status: draft
+source_count: 0
 ---
 
 # Template Title
 
-> Use for **concept**, **entity**, **query**, or **lint** wiki pages — **not** for `wiki/sources/*` (those require **page-template-source.md** / **Source Page Schema** in **AGENTS.md**).
-
-Set `type` in frontmatter to `concept` | `entity` | `query` | `lint` as appropriate.
+> OKF concept document. Set `type` to `Concept` | `Entity` | `Query` | `Playbook` | `Project Idea` | `Lint Report` per **AGENTS.md** type table. **Not** for `wiki/sources/*` (use **page-template-source.md**).
 
 ## Summary
 
@@ -22,14 +21,14 @@ One paragraph overview.
 - Point 1
 - Point 2
 
-## Evidence
-
-- Cite [[sources/...]] or `raw/sources/*` for grounded claims.
-
 ## Open Questions
 
 - Question 1
 
 ## Relationships
 
-- Related: [[Another Page]]
+- Related: [Another Page](/concepts/another.md)
+
+# Citations
+
+[1] [Source title](/sources/example.md)

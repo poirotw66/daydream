@@ -27,15 +27,45 @@ Typical personal use (non-exhaustive): research synthesis, tool notes, project r
 
 ---
 
+# 📦 OKF Alignment (v0.1)
+
+`wiki/` is an [**Open Knowledge Format (OKF)** v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf) **Knowledge Bundle**—a directory of markdown concepts with YAML frontmatter, cross-linked for humans and agents. Spec: [okf/SPEC.md](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md).
+
+| OKF term | This repo |
+|----------|-----------|
+| Knowledge Bundle | `wiki/` |
+| Concept | Any `wiki/**/*.md` except reserved `index.md`, `log.md` |
+| Concept ID | Path under `wiki/` without `.md` (e.g. `concepts/雙軌個人架構`) |
+| Citation | `# Citations` section + links to `raw/` or `/sources/*.md` |
+| Bundle extensions | `raw/` (immutable provenance), `docs/` (templates, ops)—**not** part of the OKF bundle |
+
+**Conformance (required):** every concept file has parseable YAML frontmatter with non-empty `type`. **Recommended OKF keys:** `title`, `description`, `tags`, `timestamp` (ISO 8601). **Personal extensions** (allowed by OKF §4.1): `status`, `source_count`, `resource` (canonical URI when applicable).
+
+### `type` values (this bundle)
+
+| `type` | Directory | Meaning |
+|--------|-----------|---------|
+| `Concept` | `concepts/` | Abstract ideas, frameworks, workflows |
+| `Entity` | `entities/` | Tools, products, platforms, roles |
+| `Source` | `sources/` | Ingested readings, exports, transcripts |
+| `Query` | `queries/` | Reusable Q&A |
+| `Playbook` | `faq/` | FAQ / how-I-do-X checklists |
+| `Project Idea` | `projects/ideas/` | Side-project candidates |
+| `Lint Report` | `lint/` | Wiki health diagnostics |
+
+Use descriptive `type` strings OKF-style when none of the above fit (e.g. `Reference`); consumers MUST tolerate unknown types.
+
+---
+
 # 📁 Directory Contract
 
-* `raw/`: immutable **existing** sources (❗ do not edit in place). **New** files may be **archived** into `raw/sources/` as step 2 of Ingest.
+* `raw/`: immutable **existing** sources (❗ do not edit in place). **New** files may be **archived** into `raw/sources/` as step 2 of Ingest. **Outside** the OKF bundle; cited from concept `# Citations`.
 
-* `wiki/`: LLM-managed **personal** knowledge base
+* `wiki/`: OKF **Knowledge Bundle** + personal extensions (`lint/`, `graph/`, `projects/`)
 
-* `wiki/index.md`: your canonical catalog (start here)
+* `wiki/index.md`: bundle-root catalog ([OKF §6](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#6-index-files)); **only** place that MAY declare `okf_version` in frontmatter
 
-* `wiki/log.md`: append-only personal changelog of wiki operations
+* `wiki/log.md`: optional bundle update log ([OKF §7](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#7-log-files-optional))
 
 * `wiki/sources/`: parsed knowledge from **your** readings, clips, exports, transcripts
 
@@ -63,7 +93,7 @@ Typical personal use (non-exhaustive): research synthesis, tool notes, project r
 
 * Markdown only
 
-* Must include YAML frontmatter on wiki pages **except** `wiki/index.md` (catalog — see **Required Frontmatter** below)
+* Must include YAML frontmatter on **every concept** (`wiki/**/*.md` except reserved files). `wiki/index.md`: no frontmatter **except** optional `okf_version` (OKF §11)
 
 * Language: **Traditional Chinese**
 
@@ -84,32 +114,46 @@ Typical personal use (non-exhaustive): research synthesis, tool notes, project r
 
 ---
 
-# 📌 Required Frontmatter
+# 📌 Required Frontmatter (OKF + extensions)
+
+Every concept document:
 
 ```yaml
 ---
-title: "<Page title>"
-type: "<overview|entity|concept|source|query|lint>"
-status: "<draft|active|needs-review>"
-updated: "YYYY-MM-DD"
-source_count: 0
+type: Concept          # REQUIRED (OKF §4.1) — see type table above
+title: "<Display name>"
+description: "<One-line summary>"   # recommended; feeds index entries
 tags: []
+timestamp: 2026-06-03T00:00:00Z   # ISO 8601; last meaningful change
+resource: <optional URI>          # when concept binds to an external asset
+status: active                    # extension: draft | active | needs-review
+source_count: 0                   # extension: ingested source count
 ---
 ```
 
-### `wiki/index.md` (catalog)
+### `wiki/index.md` (bundle root)
 
-* **YAML frontmatter is optional** for this file. The required shape is the **Index Structure** heading layout (`# Index`, `## Overview`, …); do not fail compliance for missing frontmatter here.
-* The `type: "overview"` value in the schema is for **standalone** overview pages if you add them (e.g. a personal dashboard `wiki/overview.md` for one focus area); it is **not** required for `wiki/index.md`.
-* If you choose to add frontmatter to `wiki/index.md`, use the same keys as **Required Frontmatter** (e.g. `type: overview`, `title` describing the catalog).
+```yaml
+---
+okf_version: "0.1"
+---
+```
+
+* Body follows **Index Structure** below (OKF §6). No other frontmatter keys on `index.md`.
+* Standalone overview pages (e.g. `wiki/overview.md`) are normal concepts with `type: Concept` or `Playbook`.
 
 ---
 
 # 🔗 Linking Rules (MANDATORY)
 
-* Every page MUST link to ≥1 page
-* Every new page MUST be referenced from `wiki/index.md` (or from a page that is already in the catalog chain)
-* Prefer bidirectional links so “idea ↔ project ↔ source” stays navigable for future-you
+OKF cross-links ([§5](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#5-cross-linking)):
+
+* Use **bundle-relative** paths from `wiki/` root: `[顯示文字](/concepts/雙軌個人架構.md)`
+* Relative paths (`./other.md`) are allowed for siblings
+* Do **not** use `[[wiki-link]]` syntax in new or updated pages
+* Every concept MUST link to ≥1 other concept
+* Every new concept MUST appear in `wiki/index.md` (or a subdirectory `index.md` when introduced)
+* Relationship kind is conveyed by **prose** around the link, not by link syntax
 
 ---
 
@@ -124,17 +168,16 @@ Every page should implicitly or explicitly define relationships:
 * `entity → concept`
 * `source → concept/entity`
 
-### Optional explicit section:
+Optional explicit section (personal convention, not OKF-required):
 
 ```md
 ## Relationships
 
-- related_to: [[concepts/api]]
-- implemented_by: [[entities/spring-boot]]
-- used_in: [[sources/ch1]]
+- related_to: [API](/concepts/api.md)
+- implemented_by: [Spring Boot](/entities/spring-boot.md)
 ```
 
-👉 This enables graph-based reasoning later (personal RAG / agents)
+👉 Consumers may build a graph from all markdown links (OKF §5.3)
 
 ---
 
@@ -148,19 +191,20 @@ Every page should implicitly or explicitly define relationships:
 
 # 📌 Citation Rules (CRITICAL)
 
-* All claims must cite **your** sources (articles, papers, exports, past-you notes)
+OKF citations ([§8](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#8-citations)):
 
-Format:
-
-```md
-[[sources/ch1]]
-```
-
-Multiple:
+* Ground claims in **your** sources (`raw/sources/*`, ingested `/sources/*.md`, or external URLs)
+* End each concept with `# Citations` when external or archived material is referenced
+* Number citations; inline body may use `[1]` or markdown links
 
 ```md
-[[sources/ch1]], [[sources/ch3]]
+# Citations
+
+[1] [2026-05-15 個人雙軌構思](/sources/2026-05-15-個人雙軌構思.md)
+[2] `raw/sources/2026-05-15-個人雙軌構思.md`（immutable archive）
 ```
+
+* Ingested source concepts SHOULD link to `raw/` path in Citations for traceability
 
 ---
 
@@ -197,23 +241,23 @@ Starter layouts: **`docs/templates/page-template-source.md`** (`wiki/sources/*`)
 
 # 📑 Index Structure
 
-The canonical catalog is **`wiki/index.md`** (single file). Do **not** assume a separate `wiki/overview.md` unless the owner adds one for a focus area; by default, **all index sections below—including Overview—live in `wiki/index.md`**, in this order:
+Canonical catalog: **`wiki/index.md`** with optional `okf_version: "0.1"` frontmatter. OKF index body ([§6](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#6-index-files)):
 
 ```md
-# Index
+# Overview
 
-## Overview
-## Concepts
-## Entities
-## Sources
-## Queries
-## FAQ
+* [AGENTS.md](../AGENTS.md) - bundle rules (OKF + personal extensions)
+* …
+
+# Concepts
+
+* [雙軌個人架構](/concepts/雙軌個人架構.md) - one-line description from frontmatter `description`
 ```
 
-* **`## Overview`**: Short orientation only—**personal scope** (what this repo is for, current focus areas, how future-you should use it), pointers to repo-root **`AGENTS.md`** and **`wiki/README.md`** when present. Use a few bullets; do not duplicate the full taxonomy—**Concepts** onward hold the linked catalog.
-* **`## Concepts` … `## FAQ`**: Each entry = **link + one-line description** (per section).
-
-Optional: the owner may add extra index sections (e.g. `## Projects`, `## Areas`) when a second track (research vs. product, job vs. side project) needs a visible split—keep entries link + one-line description.
+* Use `# Section` headings (OKF style), not `##` under `# Index`, unless you keep a hybrid—**new entries** MUST use `* [title](path) - description` bullets.
+* **`description`** in each concept’s frontmatter SHOULD match the index one-liner.
+* Optional extra sections: `# Projects`, `# Areas` for multi-track personal scope.
+* Subdirectories MAY add their own `index.md` for progressive disclosure.
 
 ---
 
@@ -288,12 +332,13 @@ Generate reusable knowledge from **your** existing wiki—patterns you keep re-a
 
 ```yaml
 ---
+type: Playbook
 title: "<FAQ title>"
-type: "query"
-status: "active"
-updated: "YYYY-MM-DD"
-source_count: 0
+description: "<One-line scope>"
 tags: ["faq"]
+timestamp: 2026-06-03T00:00:00Z
+status: active
+source_count: 0
 ---
 ```
 
@@ -313,8 +358,8 @@ tags: ["faq"]
 **Detailed Answer：**  
 
 **Related Pages：**
-- [[concepts/...]]
-- [[sources/...]]
+- [concepts/...](/concepts/....md)
+- [sources/...](/sources/....md)
 ```
 
 ---
@@ -371,10 +416,12 @@ wiki/graph/knowledge-map.md
 
 # 🪵 Logging Rules
 
-Append only:
+Prefer OKF log format ([§7](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#7-log-files-optional)); legacy `[YYYY-MM-DD] operation | title` lines may coexist:
 
 ```md
-## [YYYY-MM-DD] <operation> | <title>
+## 2026-06-03
+* **Update**: Ingest [AI CUP 參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md); aligned bundle to OKF v0.1.
+* **Creation**: Added [雙軌個人架構](/concepts/雙軌個人架構.md).
 ```
 
 ---

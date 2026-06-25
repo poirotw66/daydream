@@ -1,6 +1,6 @@
 # LLM Wiki（llm-wiki-example）
 
-Persistent, LLM-maintained knowledge base in markdown（空骨架）；本 repo 根目錄即主工作區。
+Persistent, LLM-maintained knowledge base in markdown；`wiki/` 為 [OKF v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf) Knowledge Bundle（規約見 repo 根目錄 **AGENTS.md**）。
 
 ## Folder Layout
 

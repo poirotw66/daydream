@@ -1,15 +1,16 @@
 ---
+type: Source
 title: "<Source page title>"
-type: source
-status: draft
-updated: "YYYY-MM-DD"
-source_count: 1
+description: "<One-line summary of this ingested source>"
 tags: []
+timestamp: 2026-06-03T00:00:00Z
+status: draft
+source_count: 1
 ---
 
 # <Source page title>
 
-> Use this scaffold **only** for `wiki/sources/*`. Section headings MUST match **AGENTS.md** → **Source Page Schema** (do not rename to "Key Points" / "Evidence").
+> OKF `type: Source`. Body sections below are **personal bundle conventions** for ingest quality (compatible with OKF §4.2 free-form body).
 
 ## Summary
 
@@ -19,15 +20,15 @@ tags: []
 
 ## Key Concepts
 
-- Concept or term — short note; link e.g. [[concepts/example]]
+- Concept — short note; link e.g. [example](/concepts/example.md)
 
 ## Entities
 
-- System or product — short note; link e.g. [[entities/example]]
+- System or product — short note; link e.g. [example](/entities/example.md)
 
 ## Notable Claims
 
-- Verifiable claim with citation [[sources/<slug>]] or anchored path to `raw/sources/*`.
+- Verifiable claim with citation (see `# Citations`).
 
 ## Limitations / Gaps
 
@@ -35,5 +36,8 @@ tags: []
 
 ## Relationships
 
-- related_to: [[concepts/...]]
-- used_in: [[entities/...]]
+- related_to: [concepts/...](/concepts/....md)
+
+# Citations
+
+[1] `raw/sources/<archive-slug>.md`（immutable archive）

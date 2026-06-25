@@ -64,3 +64,16 @@ Chronological, append-only operational log.
 
 - 新增：[[projects/ideas/2026-06-03-001-agentic-rag-eval-kit]]（7 天 MVP、評分、候選池狀態）。
 - 更新：[[concepts/年底轉職-agent-準備]]、[[entities/ml-intern-參賽方法]]；`wiki/index.md` 新增 **## Projects**。
+
+## 2026-06-03
+* **Update**: Aligned `wiki/` to [OKF v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf)—`AGENTS.md` OKF section, frontmatter (`type`/`description`/`timestamp`), bundle-relative links, [index](/index.md) with `okf_version: "0.1"`.
+* **Update**: Migrated 24 concept files; refreshed `docs/templates/*` and `docs/OPERATIONS.md` ingest prompt.
+
+## 2026-06-25
+* **Lint**: [Wiki 健康檢查 2026-06-25](/lint/2026-06-25-wiki-health.md) — 0 斷鏈；23 頁缺 `# Citations`；補齊 12 個損壞 `description`；標記 raw 歸檔 slug 不一致與 AI CUP 筆記缺 raw。
+
+## 2026-06-25
+* **Update**: P1 — 新增 `raw/sources/2026-05-15-ai-cup-參賽筆記.md`；canonical 複本 `2026-06-03-recipe-bloss0m-內容農場.md`、`2026-06-03-年底轉職與時間配置.md`。
+* **Update**: P2 — 24 概念檔補 `# Citations`；11 檔 `timestamp` 刷新至 2026-06-25。
+* **Creation**: [平日時間與三線並行](/queries/平日時間與三線並行.md)、[daydream 入門與工作流 FAQ](/faq/daydream-入門與工作流.md)。
+* **Update**: [Lint 報告](/lint/2026-06-25-wiki-health.md) 結案 P1–P3。

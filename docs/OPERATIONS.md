@@ -6,16 +6,16 @@ Canonical English prompts for Ingest / Query / Lint / FAQ / Graph agents. Loggin
 
 ## Ingest Prompt
 
-Use this repository as a source-grounded wiki system.
+Use this repository as a source-grounded wiki system. The `wiki/` directory is an **OKF v0.1** Knowledge Bundle (see `AGENTS.md` → OKF Alignment).
 
 Follow `AGENTS.md` strictly:
 1. Read the specified source file.
 2. Archive it into `raw/sources/*.md` (new file only; do not modify existing files under `raw/`).
-3. Create or update `wiki/sources/*` from the archived source using the **Source Page Schema** headings (`Summary`, `Key Concepts`, `Entities`, `Notable Claims`, `Limitations / Gaps`). Scaffold: `docs/templates/page-template-source.md`.
-4. Extract and update related `wiki/concepts/*` and `wiki/entities/*`.
-5. Add bidirectional links where relevant.
-6. Update `wiki/index.md`.
-7. Append `wiki/log.md`.
+3. Create or update `wiki/sources/*` as OKF concepts (`type: Source`) using the **Source Page Schema** headings. Scaffold: `docs/templates/page-template-source.md`.
+4. Extract and update related concepts under `wiki/concepts/*`, `wiki/entities/*`, etc. Use OKF `type` values and bundle-relative links (`/concepts/foo.md`).
+5. Add cross-links; end with `# Citations` where applicable.
+6. Update `wiki/index.md` (OKF index bullets: `* [title](path) - description`).
+7. Append `wiki/log.md` (OKF log format preferred).
 8. Mark uncertainty explicitly when needed and cite sources for all claims.
 
 ---
