@@ -77,3 +77,8 @@ Chronological, append-only operational log.
 * **Update**: P2 — 24 概念檔補 `# Citations`；11 檔 `timestamp` 刷新至 2026-06-25。
 * **Creation**: [平日時間與三線並行](/queries/平日時間與三線並行.md)、[daydream 入門與工作流 FAQ](/faq/daydream-入門與工作流.md)。
 * **Update**: [Lint 報告](/lint/2026-06-25-wiki-health.md) 結案 P1–P3。
+
+## 2026-06-25
+* **Update**: GitHub Pages — `mkdocs.yml`、Material 主題、`.github/workflows/deploy-wiki-pages.yml`；`wiki/README.md` → [wiki-guide.md](/wiki-guide.md)。
+* **Update**: [index](/index.md) 新增線上站連結；目標 URL https://poirotw66.github.io/daydream/
+* **Update**: MkDocs UX — Hero 卡片、OKF 類型標籤、Tabs、tags 插件、`extra.css`／`extra.js`。

@@ -6,7 +6,8 @@ okf_version: "0.1"
 
 * [AGENTS.md](../AGENTS.md) - 個人 wiki 規約（[OKF v0.1](https://github.com/GoogleCloudPlatform/knowledge-catalog/tree/main/okf) + 延伸欄位）
 * [docs/OPERATIONS.md](../docs/OPERATIONS.md) - Agent 操作提示
-* [Wiki README](./README.md) - 目錄說明
+* [Wiki 說明](/wiki-guide.md) - 目錄與 Ingest 入門
+* [線上閱讀（GitHub Pages）](https://poirotw66.github.io/daydream/) - MkDocs Material 站點
 * [雙軌個人架構](/concepts/雙軌個人架構.md) - 知識合成與貼圖／變現商務（2026-05-15）
 * [AI CUP 2026 參賽](/concepts/ai-cup-2026-參賽.md) - 桌球時序 + ESG；Baseline 見 [桌球 Baseline](/sources/2026-ai-cup-桌球戰術-baseline.md)
 * [內容農場變現軌](/concepts/內容農場變現軌.md) - 食譜 SEO → AdSense（2026-06-03）

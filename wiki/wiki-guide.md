@@ -38,3 +38,26 @@ AGENTS.md     # repo 根目錄規約，以此為準
 ## Editing Discipline
 
 - Do not change **existing** files under `raw/` in place; add new archives during Ingest.
+
+## GitHub Pages（網頁閱讀）
+
+- 站點由 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) 從 `wiki/` 建置。
+- 線上網址：**https://poirotw66.github.io/daydream/**
+- 本機預覽：
+
+```bash
+pip install -r requirements-docs.txt
+mkdocs serve
+# → http://127.0.0.1:8000/daydream/
+```
+
+- `push` 至 `main` 時，[`.github/workflows/deploy-wiki-pages.yml`](../.github/workflows/deploy-wiki-pages.yml) 自動部署。
+- 首次請在 GitHub repo **Settings → Pages → Build and deployment → Source: GitHub Actions**。
+
+### 站點 UX（僅 GitHub Pages）
+
+- **首頁 Hero**：四張主軌卡片（雙軌／AI CUP／內容農場／轉職）。
+- **OKF 標籤**：每頁顯示 `Concept`／`Entity`／`Source` 等類型與 `description` 摘要。
+- **頂部 Tabs**：Concepts、Entities、Sources… 一鍵切換。
+- **標籤雲**：frontmatter `tags` 可點選篩選。
+- 樣式：`wiki/stylesheets/extra.css`；建置時注入見 `docs/mkdocs_hooks.py`（不修改 wiki 正文）。

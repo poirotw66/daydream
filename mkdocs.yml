@@ -1,0 +1,137 @@
+# MkDocs site for wiki/ → GitHub Pages (https://poirotw66.github.io/daydream/)
+site_name: daydream Wiki
+site_description: 個人 OKF v0.1 知識庫 — 雙軌構思、AI CUP、內容農場與轉職筆記
+site_url: https://poirotw66.github.io/daydream/
+repo_url: https://github.com/poirotw66/daydream
+repo_name: poirotw66/daydream
+edit_uri: edit/main/wiki/
+
+docs_dir: wiki
+
+theme:
+  name: material
+  language: zh-Hant
+  logo: assets/daydream-logo.png
+  favicon: assets/daydream-logo.png
+  icon:
+    repo: fontawesome/brands/github
+    edit: material/pencil
+    view: material/eye
+  font:
+    text: Noto Sans TC
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: 切換至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: 切換至淺色模式
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - tags
+
+markdown_extensions:
+  - meta
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.critic
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra_css:
+  - stylesheets/extra.css
+
+hooks:
+  - docs/mkdocs_hooks.py
+
+nav:
+  - 首頁: index.md
+  - 說明: wiki-guide.md
+  - Projects:
+      - "#001 Agentic RAG Eval Kit": projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md
+  - Concepts:
+      - 雙軌個人架構: concepts/雙軌個人架構.md
+      - 研究與知識合成: concepts/研究與知識合成.md
+      - 解說式輸出: concepts/解說式輸出.md
+      - 貼圖商務自動化: concepts/貼圖商務自動化.md
+      - 內容農場變現軌: concepts/內容農場變現軌.md
+      - AI CUP 2026 參賽: concepts/ai-cup-2026-參賽.md
+      - 桌球戰術時序預測: concepts/桌球戰術時序預測.md
+      - 桌球 Baseline LSTM: concepts/桌球-baseline-lstm-多任務.md
+      - ESG 永續承諾驗證: concepts/esg-永續承諾驗證任務.md
+      - 年底轉職 Agent 準備: concepts/年底轉職-agent-準備.md
+  - Entities:
+      - bloss0m.com: entities/bloss0m-com.md
+      - 國泰金控 AI 架構師: entities/國泰金控-ai-架構師.md
+      - NotebookLM: entities/notebooklm.md
+      - LINE 貼圖平台: entities/line-貼圖平台.md
+      - recipe.bloss0m.com: entities/recipe-bloss0m-com.md
+      - AI CUP 2026: entities/ai-cup-2026.md
+      - VeriPromiseESG4K: entities/veripromise-esg4k.md
+      - ML-Intern 參賽方法: entities/ml-intern-參賽方法.md
+  - Sources:
+      - 2026-05-15 個人雙軌構思: sources/2026-05-15-個人雙軌構思.md
+      - 2026-05-15 AI CUP 參賽筆記: sources/2026-05-15-ai-cup-參賽筆記.md
+      - 桌球戰術 Baseline: sources/2026-ai-cup-桌球戰術-baseline.md
+      - recipe.bloss0m 內容農場: sources/2026-06-03-recipe-bloss0m-內容農場.md
+      - 年底轉職與時間配置: sources/2026-06-03-年底轉職與時間配置.md
+  - Queries:
+      - 平日時間與三線並行: queries/平日時間與三線並行.md
+  - FAQ:
+      - 入門與工作流: faq/daydream-入門與工作流.md
+  - Meta:
+      - 變更日誌: log.md
+      - Wiki 健康檢查: lint/2026-06-25-wiki-health.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/poirotw66/daydream
+  generator: false
+
+copyright: Copyright &copy; 2026 daydream · OKF v0.1
