@@ -100,8 +100,6 @@ nav:
       - 研究與知識合成: concepts/研究與知識合成.md
       - 解說式輸出: concepts/解說式輸出.md
       - 貼圖商務自動化: concepts/貼圖商務自動化.md
-      - 內容農場變現軌: concepts/內容農場變現軌.md
-      - AI CUP 2026 參賽: concepts/ai-cup-2026-參賽.md
       - 桌球戰術時序預測: concepts/桌球戰術時序預測.md
       - 桌球 Baseline LSTM: concepts/桌球-baseline-lstm-多任務.md
       - ESG 永續承諾驗證: concepts/esg-永續承諾驗證任務.md
@@ -117,7 +115,6 @@ nav:
       - 國泰金控 AI 架構師: entities/國泰金控-ai-架構師.md
       - NotebookLM: entities/notebooklm.md
       - LINE 貼圖平台: entities/line-貼圖平台.md
-      - recipe.bloss0m.com: entities/recipe-bloss0m-com.md
       - AI CUP 2026: entities/ai-cup-2026.md
       - VeriPromiseESG4K: entities/veripromise-esg4k.md
       - ML-Intern 參賽方法: entities/ml-intern-參賽方法.md
@@ -141,6 +138,10 @@ nav:
       - 平日時間與主線: queries/平日時間與三線並行.md
       - Kaggle 經典賽路徑: queries/kaggle-經典賽與學習路徑.md
       - 金融業 Agent 應用: queries/金融業-agent-應用探索.md
+  - 已暫停:
+      - 內容農場變現軌: concepts/內容農場變現軌.md
+      - AI CUP 2026 參賽: concepts/ai-cup-2026-參賽.md
+      - recipe.bloss0m.com: entities/recipe-bloss0m-com.md
   - Meta:
       - 變更日誌: log.md
       - Wiki 健康檢查: lint/2026-06-25-wiki-health.md

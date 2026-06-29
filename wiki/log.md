@@ -159,3 +159,10 @@ Chronological, append-only operational log.
 
 * **Update**: [AGENTS.md](../AGENTS.md) — `faq/` 廢止、`index.md` 點子集散、完整目錄改由 `mkdocs.yml` nav
 * **Update**: [OPERATIONS.md](../docs/OPERATIONS.md) — FAQ deprecated、Query Persist prompt、nav 與 index hub 分工
+
+## [2026-06-25] cleanup | P1 最小清理
+
+* **Update**: [內容農場變現軌](/concepts/內容農場變現軌.md)、[ai-cup-2026-參賽](/concepts/ai-cup-2026-參賽.md)、[recipe-bloss0m-com](/entities/recipe-bloss0m-com.md) → `status: archived`
+* **Update**: [mkdocs.yml](../mkdocs.yml) nav「已暫停」區塊；[#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) 連結改 bundle-relative
+* **Update**: [README.md](../README.md) 補 #003
+* **Delete**: `wiki/faq/`（含 `.gitkeep`）

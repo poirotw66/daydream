@@ -13,7 +13,7 @@
 | **年底轉職** | AI agent 開發／應用 → [年底轉職 Agent 準備](wiki/concepts/年底轉職-agent-準備.md) |
 | **現職場內案子** | 國泰場景內 Agent 案子 → [現職場內 Agent 案子](wiki/concepts/現職場內-agent-案子.md) |
 | **每日輸出** | [每日技術前沿 blog](wiki/concepts/每日技術前沿-blog.md) — **科技前沿**（廣義） |
-| **Side 實作** | [金融 Agent 發想](wiki/concepts/金融業-ai-agent-side-發想.md) — [應用探索](wiki/queries/金融業-agent-應用探索.md)、[#002 法規 RAG](wiki/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) |
+| **Side 實作** | [金融 Agent 發想](wiki/concepts/金融業-ai-agent-side-發想.md) — [應用探索](wiki/queries/金融業-agent-應用探索.md)、[#002 法規 RAG](wiki/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)、[#003 詐欺 Copilot](wiki/projects/ideas/2026-06-25-003-詐欺調查-copilot.md) |
 | **Kaggle** | [經典賽路徑](wiki/queries/kaggle-經典賽與學習路徑.md) — Titanic 起手 |
 | **Autoresearch** | [karpathy/autoresearch](https://github.com/karpathy/autoresearch) |
 | **學習** | [李宏毅課程論文深讀](wiki/concepts/李宏毅課程論文深讀.md) |

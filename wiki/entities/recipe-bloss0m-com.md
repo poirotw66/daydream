@@ -4,7 +4,7 @@ title: "recipe.bloss0m.com（今天煮什麼）"
 description: "recipe.bloss0m.com 食譜 SEO 站；2026-06-25 起內容農場路線暫時收尾，站點保留歷史狀態。"
 tags: ["內容農場", "seo", "archive"]
 timestamp: 2026-06-25T12:00:00Z
-status: needs-review
+status: archived
 source_count: 2
 ---
 # recipe.bloss0m.com（今天煮什麼）

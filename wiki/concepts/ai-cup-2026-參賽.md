@@ -4,7 +4,7 @@ title: "AI CUP 2026 參賽"
 description: "個人曾投入 AI CUP 2026 桌球時序與 ESG 兩賽；2026-06-25 起參賽階段告一段落，留存為歷史脈絡。"
 tags: ["ai-cup", "競賽", "archive"]
 timestamp: 2026-06-25T00:00:00Z
-status: needs-review
+status: archived
 source_count: 4
 ---
 # AI CUP 2026 參賽
