@@ -13,7 +13,7 @@ source_count: 3
 
 自 **2026-06-25** 起，side **發想與實作**主題為**金融業 AI agent 應用**；與 [每日技術前沿-blog](/concepts/每日技術前沿-blog.md) **並存** — blog 寫廣義科技前沿，side 做金融垂直場景。（確定）[2026-06-25-kaggle路徑與輸出分工](/sources/2026-06-25-kaggle路徑與輸出分工.md)
 
-場景地圖與候選池見 [金融業-agent-應用探索](/queries/金融業-agent-應用探索.md)；首選 side **[#002 公開法規 RAG](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)**。（確定）[2026-06-25-金融業-agent-應用探索](/sources/2026-06-25-金融業-agent-應用探索.md)
+場景地圖與候選池見 [金融業-agent-應用探索](/queries/金融業-agent-應用探索.md)；**核心問題與交付清單**見 [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)。（確定）
 
 ## Key Points
 

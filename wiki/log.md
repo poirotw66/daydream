@@ -129,3 +129,7 @@ Chronological, append-only operational log.
 * **Archive**: `raw/sources/2026-06-25-002-corpus-規劃.md`
 * **Creation**: [#002 corpus 規劃 source](/sources/2026-06-25-002-corpus-規劃.md)
 * **Update**: [#002 公開法規 RAG](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) — 鎖定洗錢防制法體系、manifest、golden 10 題、Day 1～7
+
+## [2026-06-25] update | #002 核心問題與交付清單
+
+* **Update**: [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) — 補「核心問題」「成功標準」「repo／wiki／blog 交付清單」
