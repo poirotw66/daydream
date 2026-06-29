@@ -31,7 +31,7 @@ source_count: 4
 ## Open Questions
 
 - 最終提交／名次／是否兩賽皆完賽？（未知）
-- ML-Intern skill 是否封存或併入 #001 Eval Kit？（未知）
+- ML-Intern skill 是否封存或併入 #002 金融 eval？（未知）
 
 ## Relationships
 

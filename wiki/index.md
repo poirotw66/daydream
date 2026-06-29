@@ -29,7 +29,7 @@ okf_version: "0.1"
 - :material-lightbulb-outline: **Concepts** — 16 個概念（Agent 職涯、Kaggle 實驗、李宏毅深讀…）
 - :material-database-outline: **Entities** — 12 個實體
 - :material-file-document-outline: **Sources** — 7 份歸檔來源
-- :material-rocket-launch-outline: **Projects** — 3 個候選 side（#001 Eval、#002 法規 RAG、#003 詐欺 Copilot）
+- :material-rocket-launch-outline: **Projects** — 2 個候選 side（#002 法規 RAG、#003 詐欺 Copilot）
 - :material-help-circle-outline: **Queries** — 可重用問答（時間配置、Kaggle 路徑…）
 
 </div>

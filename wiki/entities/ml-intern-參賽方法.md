@@ -17,7 +17,7 @@ source_count: 3
 
 - 核心：baseline、harness、指標記錄、一鍵重跑。（確定）[2026-05-15-ai-cup-參賽筆記](/sources/2026-05-15-ai-cup-參賽筆記.md)
 - AI CUP 賽事已結案；Kaggle 取代賽季時間主軸。（確定）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
-- eval 思路可與 [#001 Eval Kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) 呼應。（推測）
+- eval 思路可與 [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) 或 [bloss0m-com](/entities/bloss0m-com.md) 既有實作呼應。（推測）
 
 ## Evidence
 

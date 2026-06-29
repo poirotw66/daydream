@@ -22,7 +22,7 @@ source_count: 1
 | [kaggle](/entities/kaggle.md) | **第一站**：經典競賽作為題目與 leaderboard 基準 |
 
 - 取代 AI CUP 賽季與內容農場，佔用 side **深工**時段。（推測）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
-- 可與 [#001 Eval Kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) 在 **eval 方法論**上呼應。（推測）
+- 可與 [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) 在 **eval 方法論**上呼應；#001 Eval Kit 已結案。（推測）
 
 ## Evidence
 

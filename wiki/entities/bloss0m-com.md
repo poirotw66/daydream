@@ -18,7 +18,7 @@ source_count: 2
 ## Key Points
 
 - 定位：AI 原型到商用規模；PoC→可維運、可交接系統。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
-- 代表專案：Agentic RAG、收據 OCR、PPT2Preview 等。（確定）[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
+- 代表專案：Agentic RAG（含 **Eval Kit／golden set**，#001 已結案）、收據 OCR、PPT2Preview 等。（確定）擁有者 2026-06；[2026-06-03-年底轉職與時間配置](/sources/2026-06-03-年底轉職與時間配置.md)
 - 子站 [recipe-bloss0m-com](/entities/recipe-bloss0m-com.md)：**內容農場暫時收尾**。（確定）[2026-06-25-學習與-side-主軸調整](/sources/2026-06-25-學習與-side-主軸調整.md)
 
 ## Evidence

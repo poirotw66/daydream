@@ -24,7 +24,7 @@ source_count: 3
 | **風控／反詐** | 交易異常調查、AML 案件整理、規則＋模型解釋 | Tool-using copilot、**human-in-the-loop** | **中** — [IEEE-CIS](https://www.kaggle.com/competitions/ieee-fraud-detection) 等公開資料；不做真實攔截 |
 | **營運／流程** | 對帳差異歸因、工單分類、客訴路由 | 工作流 Agent + 表單工具 | **低** — 易碰內部流程；side 僅能抽象 demo |
 | **投研／資訊** | 財報／法說摘要、產業新聞 synthesis | 多步檢索 + 引用 | **中** — 公開 10-K／新聞；須免責與非投顧聲明 |
-| **Agent 基建** | Golden set eval、回歸、tool trace 觀測 | Harness／eval kit | **高** — 與 [#001 Eval Kit](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) 合流 |
+| **Agent 基建** | Golden set eval、回歸、tool trace 觀測 | Harness／eval kit | **高** — [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) 內建 `/eval/run`；#001 已於 bloss0m 結案 |
 
 （推測）場景分類綜合 wiki 既有發想與公開金融 Agent 實務；**未** ingest 單一外部白皮書。
 
@@ -38,7 +38,7 @@ source_count: 3
 | **Provenance** | 每則回答附來源片段／tool log，可稽核 |
 | **Refusal & escalation** | 不確定、缺資料、涉個資 → 拒答或轉人工 |
 | **Tool boundary** | 區分 read-only（查法規）vs write（需二次確認） |
-| **Eval regression** | 法規改版、prompt 改動 → golden set 回歸（#001 敘事） |
+| **Eval regression** | 法規改版、prompt 改動 → golden set 回歸（#002 內建） |
 | **PII / 內規** | Side **不得**用真實客戶資料；合成或公開集 only |
 
 ### 3. 正職 vs Side 分工
@@ -56,15 +56,15 @@ source_count: 3
 
 | ID | 一句話 | 公開資料 | 總分 | 連結 |
 |----|--------|----------|------|------|
-| **#002** | 台灣**公開法規** Agentic RAG：引用段落 + eval | 金管會等公開網頁／PDF | **21/25** | [詳情](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) |
+| **#002** | 台灣**公開法規** Agentic RAG：引用段落 + eval | 金管會等公開網頁／PDF | **23/25** | [詳情](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) |
 | **#003** | **詐欺調查 Copilot**：IEEE-CIS 特徵解釋 + 調查備忘錄草稿 | Kaggle IEEE-CIS | **20/25** | [詳情](/projects/ideas/2026-06-25-003-詐欺調查-copilot.md) |
-| **#001** | 通用 Eval Kit；可換 **金融 golden set** | 公開 PDF／10-K 摘錄 | **22/25**（既有） | [詳情](/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md) |
+
+**已結案（不在候選池）：** #001 Agentic RAG Eval Kit — 已於 [bloss0m-com](/entities/bloss0m-com.md) 完成，eval 敘事併入 #002。
 
 **建議首實作順序**（推測）：
 
-1. **#002** — 最直接呼應「金融 + RAG + 合規敘事」，與轉職、場內案子語言一致。
-2. **#001 金融版 golden** — 在 #002 corpus 上掛 `/eval/run`，一週內可併交付。
-3. **#003** — 與 [kaggle-經典賽與學習路徑](/queries/kaggle-經典賽與學習路徑.md) P3 並行，偏 tabular＋tool 敘事。
+1. **#002** — 法規 RAG + golden eval + 時事敘事。
+2. **#003** — 與 [kaggle-經典賽與學習路徑](/queries/kaggle-經典賽與學習路徑.md) P3 並行。
 
 ### 5. 不建議優先的 side 方向
 

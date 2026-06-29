@@ -133,3 +133,14 @@ Chronological, append-only operational log.
 ## [2026-06-25] update | #002 核心問題與交付清單
 
 * **Update**: [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) — 補「核心問題」「成功標準」「repo／wiki／blog 交付清單」
+
+## [2026-06-25] ingest | #002 時事微調（國泰投信／ETtoday）
+
+* **Archive**: `raw/sources/2026-06-25-國泰投信利害關係人-ettoday.md`
+* **Creation**: [國泰投信利害關係人 ETtoday](/sources/2026-06-25-國泰投信利害關係人-ettoday.md)
+* **Update**: [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) — 雙軌 corpus（投信利害關係人主 + AML 輔）、法遵指引、golden 12 題、拒答媒體金額
+
+## [2026-06-25] retire | #001 Agentic RAG Eval Kit 結案移除
+
+* **Delete**: `wiki/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md`（擁有者已於 bloss0m 完成，不再進候選池）
+* **Update**: [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)、[金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md)、[金融業-agent-應用探索](/queries/金融業-agent-應用探索.md)、[年底轉職-agent-準備](/concepts/年底轉職-agent-準備.md)、[bloss0m-com](/entities/bloss0m-com.md)、index、mkdocs nav

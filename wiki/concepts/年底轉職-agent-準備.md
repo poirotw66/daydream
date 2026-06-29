@@ -33,7 +33,7 @@ source_count: 3
 | 區塊 | 時長 | 內容 |
 |------|------|------|
 | 深工 1 | ~1.5h | [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)／Kaggle |
-| 深工 2 | ~1.5h | 金融 Agent side 實作／#001／[每日資訊收集-agent](/concepts/每日資訊收集-agent.md) MVP |
+| 深工 2 | ~1.5h | 金融 Agent side（[#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)／[#003](/projects/ideas/2026-06-25-003-詐欺調查-copilot.md)）／[每日資訊收集-agent](/concepts/每日資訊收集-agent.md) MVP |
 | 輸出 | ~1h | [每日技術前沿-blog](/concepts/每日技術前沿-blog.md) 撰寫 |
 | 發想 | ~15min | [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md) `#NNN` |
 
