@@ -9,7 +9,7 @@ from pathlib import PurePosixPath
 
 REPO = "https://github.com/poirotw66/daydream/blob/main"
 
-_BUNDLE_PREFIXES = ("concepts", "entities", "sources", "queries", "faq", "projects", "lint")
+_BUNDLE_PREFIXES = ("concepts", "entities", "sources", "queries", "projects", "lint")
 
 _INTERNAL_LINK = re.compile(
     r"\]\((?P<path>/?(?:"

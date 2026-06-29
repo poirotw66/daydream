@@ -94,6 +94,8 @@ nav:
   - 說明: wiki-guide.md
   - Projects:
       - "#001 Agentic RAG Eval Kit": projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md
+      - "#002 公開法規 Agentic RAG": projects/ideas/2026-06-25-002-公開法規-agentic-rag.md
+      - "#003 詐欺調查 Copilot": projects/ideas/2026-06-25-003-詐欺調查-copilot.md
   - Concepts:
       - 雙軌個人架構: concepts/雙軌個人架構.md
       - 研究與知識合成: concepts/研究與知識合成.md
@@ -133,11 +135,12 @@ nav:
       - 主線重定義 Agent 職涯: sources/2026-06-25-主線重定義-agent職涯.md
       - 學習與 side 主軸調整: sources/2026-06-25-學習與-side-主軸調整.md
       - Kaggle 路徑與輸出分工: sources/2026-06-25-kaggle路徑與輸出分工.md
+      - 金融業 Agent 應用探索: sources/2026-06-25-金融業-agent-應用探索.md
+      - "#002 Corpus 規劃": sources/2026-06-25-002-corpus-規劃.md
   - Queries:
       - 平日時間與主線: queries/平日時間與三線並行.md
       - Kaggle 經典賽路徑: queries/kaggle-經典賽與學習路徑.md
-  - FAQ:
-      - 入門與工作流: faq/daydream-入門與工作流.md
+      - 金融業 Agent 應用: queries/金融業-agent-應用探索.md
   - Meta:
       - 變更日誌: log.md
       - Wiki 健康檢查: lint/2026-06-25-wiki-health.md

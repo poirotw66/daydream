@@ -7,9 +7,9 @@ okf_version: "0.1"
 | | |
 | --- | --- |
 | [Wiki 說明](/wiki-guide.md) | 目錄結構、Ingest、GitHub Pages 預覽 |
-| [入門與工作流 FAQ](/faq/daydream-入門與工作流.md) | Agent 職涯主線、Ingest、OKF 慣例（12 題） |
 | [平日時間與主線怎麼排？](/queries/平日時間與三線並行.md) | Kaggle 實驗、金融 Agent、每日 blog |
 | [Kaggle 經典賽與學習路徑？](/queries/kaggle-經典賽與學習路徑.md) | Titanic → House Prices → 金融 fraud 銜接 |
+| [金融業 Agent 應用探索？](/queries/金融業-agent-應用探索.md) | 場景地圖、side 候選 #002／#003 |
 
 ## 規約與維護
 
@@ -29,7 +29,7 @@ okf_version: "0.1"
 - :material-lightbulb-outline: **Concepts** — 16 個概念（Agent 職涯、Kaggle 實驗、李宏毅深讀…）
 - :material-database-outline: **Entities** — 12 個實體
 - :material-file-document-outline: **Sources** — 7 份歸檔來源
-- :material-rocket-launch-outline: **Projects** — 1 個候選 side project
-- :material-help-circle-outline: **FAQ / Queries** — 可重用問答（含 Kaggle 路徑）
+- :material-rocket-launch-outline: **Projects** — 3 個候選 side（#001 Eval、#002 法規 RAG、#003 詐欺 Copilot）
+- :material-help-circle-outline: **Queries** — 可重用問答（時間配置、Kaggle 路徑…）
 
 </div>

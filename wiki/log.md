@@ -111,3 +111,21 @@ Chronological, append-only operational log.
 * **Archive**: `raw/sources/2026-06-25-kaggle路徑與輸出分工.md`
 * **Creation**: [Kaggle 路徑與輸出分工](/sources/2026-06-25-kaggle路徑與輸出分工.md)、[kaggle-經典賽與學習路徑](/queries/kaggle-經典賽與學習路徑.md)
 * **Update**: [autoresearch](/entities/autoresearch.md) → [karpathy/autoresearch](https://github.com/karpathy/autoresearch)；blog／side 並存分工
+
+## [2026-06-25] refactor | 移除 FAQ 專區
+
+* **Delete**: `wiki/faq/daydream-入門與工作流.md`；本 wiki 可重用問答改以 `queries/` 為準
+* **Update**: [index](/index.md)、[mkdocs.yml](../mkdocs.yml)、[README.md](../README.md)、[wiki-guide](/wiki-guide.md)、[mkdocs_hooks.py](../docs/mkdocs_hooks.py)
+
+## [2026-06-25] query | 金融業 Agent 應用探索
+
+* **Archive**: `raw/sources/2026-06-25-金融業-agent-應用探索.md`
+* **Creation**: [金融業 Agent 應用探索](/sources/2026-06-25-金融業-agent-應用探索.md)、[query](/queries/金融業-agent-應用探索.md)
+* **Creation**: projects — [#002 公開法規 RAG](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)、[#003 詐欺 Copilot](/projects/ideas/2026-06-25-003-詐欺調查-copilot.md)
+* **Update**: [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md)、index、mkdocs nav
+
+## [2026-06-25] plan | #002 Corpus 詳規
+
+* **Archive**: `raw/sources/2026-06-25-002-corpus-規劃.md`
+* **Creation**: [#002 corpus 規劃 source](/sources/2026-06-25-002-corpus-規劃.md)
+* **Update**: [#002 公開法規 RAG](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) — 鎖定洗錢防制法體系、manifest、golden 10 題、Day 1～7

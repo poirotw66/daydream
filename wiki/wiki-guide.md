@@ -13,13 +13,15 @@ wiki/
   entities/
   concepts/
   queries/
-  faq/
   lint/
   graph/
   index.md
   log.md
+  wiki-guide.md
 AGENTS.md     # repo 根目錄規約，以此為準
 ```
+
+本 wiki **不使用** `wiki/faq/`；可重用問答寫在 `queries/`。
 
 ## Quick Start
 
@@ -33,7 +35,6 @@ AGENTS.md     # repo 根目錄規約，以此為準
 - Entity page: `wiki/entities/<entity-name>.md`
 - Concept page: `wiki/concepts/<concept-name>.md`
 - Query page: `wiki/queries/<query-slug>.md`
-- FAQ page: `wiki/faq/<faq-slug>.md`
 
 ## Editing Discipline
 
