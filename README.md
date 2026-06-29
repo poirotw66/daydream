@@ -26,7 +26,7 @@
 
 | 入口 | 用途 |
 |------|------|
-| [wiki/index.md](wiki/index.md) | 知識庫首頁 |
+| [wiki/index.md](wiki/index.md) | **點子集散中心**（Side #002／#003、主軸、決策捷徑） |
 | [wiki/wiki-guide.md](wiki/wiki-guide.md) | 目錄、Ingest、本機預覽 |
 | [wiki/queries/平日時間與三線並行.md](wiki/queries/平日時間與三線並行.md) | 平日時間與主線配置 |
 | [AGENTS.md](AGENTS.md) | 維護規約 |

@@ -1,6 +1,6 @@
 # MkDocs site for wiki/ → GitHub Pages (https://poirotw66.github.io/daydream/)
-site_name: daydream Wiki
-site_description: 個人 OKF v0.1 知識庫 — Agent 職涯、Kaggle 實驗、金融 Agent 與每日技術 blog
+site_name: daydream
+site_description: 點子集散中心 — Side 發想、金融 Agent、Kaggle 實驗與技術 blog
 site_url: https://poirotw66.github.io/daydream/
 repo_url: https://github.com/poirotw66/daydream
 repo_name: poirotw66/daydream
@@ -91,10 +91,10 @@ hooks:
 
 nav:
   - 首頁: index.md
-  - 說明: wiki-guide.md
-  - Projects:
+  - Side 點子:
       - "#002 公開法規 Agentic RAG": projects/ideas/2026-06-25-002-公開法規-agentic-rag.md
       - "#003 詐欺調查 Copilot": projects/ideas/2026-06-25-003-詐欺調查-copilot.md
+  - 說明: wiki-guide.md
   - Concepts:
       - 雙軌個人架構: concepts/雙軌個人架構.md
       - 研究與知識合成: concepts/研究與知識合成.md

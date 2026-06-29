@@ -102,47 +102,11 @@ def _page_header(meta: dict) -> str:
 
 def _index_hero() -> str:
     return """
-<div class="dd-hero" markdown>
+<div class="dd-hero dd-hero--hub" markdown>
 
-# daydream Wiki
+# 點子集散中心
 
-<p class="dd-hero__subtitle">Agent 職涯 — 場內案子、Kaggle 實驗、金融 Agent 發想、每日技術 blog。</p>
-
-<div class="grid cards" markdown>
-
-- :material-briefcase-account:{ .lg .middle } **年底轉職**
-
-    ---
-
-    AI agent 開發／應用
-
-    [:octicons-arrow-right-24: 進入](/concepts/年底轉職-agent-準備.md)
-
-- :material-domain:{ .lg .middle } **場內案子**
-
-    ---
-
-    國泰 · 企業級 Agent
-
-    [:octicons-arrow-right-24: 進入](/concepts/現職場內-agent-案子.md)
-
-- :material-chart-timeline-variant:{ .lg .middle } **Kaggle 實驗**
-
-    ---
-
-    ml-intern × autoresearch
-
-    [:octicons-arrow-right-24: 進入](/concepts/ml-intern-autoresearch-路線.md)
-
-- :material-newspaper-variant-outline:{ .lg .middle } **每日輸出**
-
-    ---
-
-    技術前沿 blog · 資訊 agent
-
-    [:octicons-arrow-right-24: 進入](/concepts/每日技術前沿-blog.md)
-
-</div>
+<p class="dd-hero__subtitle">Side 發想、實驗與輸出的起點 — 先看清「現在在追什麼點子」，再進各頁細節。</p>
 
 </div>
 

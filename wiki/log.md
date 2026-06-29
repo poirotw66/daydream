@@ -144,3 +144,18 @@ Chronological, append-only operational log.
 
 * **Delete**: `wiki/projects/ideas/2026-06-03-001-agentic-rag-eval-kit.md`（擁有者已於 bloss0m 完成，不再進候選池）
 * **Update**: [#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md)、[金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md)、[金融業-agent-應用探索](/queries/金融業-agent-應用探索.md)、[年底轉職-agent-準備](/concepts/年底轉職-agent-準備.md)、[bloss0m-com](/entities/bloss0m-com.md)、index、mkdocs nav
+
+## [2026-06-25] lint | Wiki 健康檢查重跑
+
+* **Update**: [Wiki 健康檢查 2026-06-25（重跑）](/lint/2026-06-25-wiki-health.md) — 2 error（歷史 faq 斷鏈）、index Sources 11、pass 主線一致
+* **Fix**: [index](/index.md) 計數；[金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md) 移除已解決 Open Question
+
+## [2026-06-25] ux | 首頁改為點子集散中心
+
+* **Update**: [index](/index.md) — Side 點子卡、四主軸、決策捷徑；移除目錄式分區計數
+* **Update**: [mkdocs_hooks.py](../docs/mkdocs_hooks.py) Hero、[extra.css](../wiki/stylesheets/extra.css) hub 樣式、[mkdocs.yml](../mkdocs.yml) nav「Side 點子」置頂
+
+## [2026-06-25] schema | AGENTS.md / OPERATIONS 對齊現況
+
+* **Update**: [AGENTS.md](../AGENTS.md) — `faq/` 廢止、`index.md` 點子集散、完整目錄改由 `mkdocs.yml` nav
+* **Update**: [OPERATIONS.md](../docs/OPERATIONS.md) — FAQ deprecated、Query Persist prompt、nav 與 index hub 分工

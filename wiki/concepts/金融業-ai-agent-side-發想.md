@@ -31,7 +31,6 @@ source_count: 3
 ## Open Questions
 
 - 發想評分是否正式把第五維改為「金融場景相關」？（未知）
-- #002 首選 corpus：金管會單一法規類 vs 多源？（未知）
 
 ## Relationships
 

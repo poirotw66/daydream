@@ -11,7 +11,7 @@ Build a **self-evolving personal knowledge base** that:
 * Minimizes hallucination when you revisit topics months later
 * Maximizes traceability (what you read, concluded, and when)
 * Maintains structured relationships (graph) across interests and projects
-* Supports **future-you**: quick recall, reusable notes, FAQ for yourself, RAG / agents on your own corpus
+* Supports **future-you**: quick recall, reusable notes, **queries** for recurring Q&A, RAG / agents on your own corpus
 
 Typical personal use (non-exhaustive): research synthesis, tool notes, project runbooks, creative pipelines (e.g. content or product workflows), and cross-linking ideas across domains.
 
@@ -48,9 +48,9 @@ Typical personal use (non-exhaustive): research synthesis, tool notes, project r
 | `Concept` | `concepts/` | Abstract ideas, frameworks, workflows |
 | `Entity` | `entities/` | Tools, products, platforms, roles |
 | `Source` | `sources/` | Ingested readings, exports, transcripts |
-| `Query` | `queries/` | Reusable Q&A |
-| `Playbook` | `faq/` | FAQ / how-I-do-X checklists |
-| `Project Idea` | `projects/ideas/` | Side-project candidates |
+| `Query` | `queries/` | Reusable Q&A（**本 repo 首選**；取代已廢止的 `faq/`） |
+| `Playbook` | — | 舊 FAQ 格式；**本 repo 不再新增** `wiki/faq/` |
+| `Project Idea` | `projects/ideas/` | Side-project 候選（點子集散中心主軸） |
 | `Lint Report` | `lint/` | Wiki health diagnostics |
 
 Use descriptive `type` strings OKF-style when none of the above fit (e.g. `Reference`); consumers MUST tolerate unknown types.
@@ -75,7 +75,9 @@ Use descriptive `type` strings OKF-style when none of the above fit (e.g. `Refer
 
 * `wiki/queries/`: reusable Q&A you asked once and want again
 
-* `wiki/faq/`: FAQ **for yourself** (recurring confusion, checklists, “how I do X”)
+* `wiki/projects/ideas/`: side-project **點子**（候選池；首頁集散）
+
+* ~~`wiki/faq/`~~：**本 repo 不使用**；可重用問答寫 `queries/`
 
 * `wiki/lint/`: diagnostics on your wiki’s health
 
@@ -152,7 +154,8 @@ OKF cross-links ([§5](https://github.com/GoogleCloudPlatform/knowledge-catalog/
 * Relative paths (`./other.md`) are allowed for siblings
 * Do **not** use `[[wiki-link]]` syntax in new or updated pages
 * Every concept MUST link to ≥1 other concept
-* Every new concept MUST appear in `wiki/index.md` (or a subdirectory `index.md` when introduced)
+* Every new concept MUST appear in **`mkdocs.yml` nav** (or a page already in the catalog chain)
+* New **Side 點子** SHOULD appear on `wiki/index.md` while in 候選池
 * Relationship kind is conveyed by **prose** around the link, not by link syntax
 
 ---
@@ -241,23 +244,30 @@ Starter layouts: **`docs/templates/page-template-source.md`** (`wiki/sources/*`)
 
 # 📑 Index Structure
 
-Canonical catalog: **`wiki/index.md`** with optional `okf_version: "0.1"` frontmatter. OKF index body ([§6](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md#6-index-files)):
+Canonical entry: **`wiki/index.md`** with optional `okf_version: "0.1"` frontmatter.
+
+### 本 repo：`index.md` = 點子集散中心（personal extension）
+
+首頁**不是**完整 OKF 條目目錄，而是：
+
+1. **進行中 Side 點子**（`projects/ideas/*`）— 候選池、評分、連結
+2. **主軸**（concepts 捷徑）— 正職／實驗／輸出／Side
+3. **決策捷徑**（`queries/*`）
+4. **維護** — `wiki-guide`、`log`、`lint`
+
+**完整條目目錄**由 **MkDocs `mkdocs.yml` nav** + 站內搜尋承載；新增 concept／entity 時**必須**更新 nav，**不必**在 `index.md` 逐條列出。
+
+### OKF 子目錄 index（可選）
+
+子目錄可另加 `index.md`，沿用 OKF §6 條目格式：
 
 ```md
-# Overview
-
-* [AGENTS.md](../AGENTS.md) - bundle rules (OKF + personal extensions)
-* …
-
 # Concepts
 
 * [雙軌個人架構](/concepts/雙軌個人架構.md) - one-line description from frontmatter `description`
 ```
 
-* Use `# Section` headings (OKF style), not `##` under `# Index`, unless you keep a hybrid—**new entries** MUST use `* [title](path) - description` bullets.
-* **`description`** in each concept’s frontmatter SHOULD match the index one-liner.
-* Optional extra sections: `# Projects`, `# Areas` for multi-track personal scope.
-* Subdirectories MAY add their own `index.md` for progressive disclosure.
+* **`description`** in each concept’s frontmatter SHOULD match any index one-liner when listed.
 
 ---
 
@@ -272,7 +282,7 @@ Canonical catalog: **`wiki/index.md`** with optional `okf_version: "0.1"` frontm
    * entities
 5. Update related pages (only those tied to the owner’s current interests—no obligation to “cover the whole domain”)
 6. Link everything
-7. Update index
+7. Update **index hub**（若為 Side 點子或主軸變更）與 **`mkdocs.yml` nav**
 8. Append log
 
 ---
@@ -281,7 +291,7 @@ Canonical catalog: **`wiki/index.md`** with optional `okf_version: "0.1"` frontm
 
 Answer **for the owner** (study, build, write, decide)—not as an internal support desk.
 
-1. Read index
+1. Read `wiki/index.md`（點子集散）then relevant concepts / entities / queries / `projects/ideas`
 2. Find relevant pages
 3. Synthesize answer
 4. Cite sources
@@ -291,22 +301,18 @@ Answer **for the owner** (study, build, write, decide)—not as an internal supp
 
 ## Query Resolution Rule (MANDATORY)
 
-1. Check `wiki/` summary pages first (`faq`, `concepts`, `entities`).
+1. Check `wiki/queries/`, `concepts/`, `entities/`, `projects/ideas/` first
 2. If summary information is sufficient and non-conflicting, answer directly.
 3. If summary information is insufficient, ambiguous, or conflicting, verify with `raw/sources/*`.
 4. Final answers MUST include traceable locations (at minimum file paths; include section/line anchors when needed).
 
 ---
 
-# 📚 Operation: FAQ
+# 📚 Operation: FAQ（本 repo 已廢止專區）
 
-## Purpose
+**本 bundle 不使用 `wiki/faq/`。** 可重用問答請用 **Query** 操作，寫入 `wiki/queries/`。
 
-Generate reusable knowledge from **your** existing wiki—patterns you keep re-asking, personal workflows, mental models.
-
----
-
-## Steps
+以下步驟僅在 owner **明確要求**重建 FAQ 專區時參考；否則改寫為 query 頁即可。
 
 1. Read `wiki/index.md`
 2. Scan:
@@ -433,7 +439,7 @@ Prefer OKF log format ([§7](https://github.com/GoogleCloudPlatform/knowledge-ca
 * ALWAYS cite
 * ALWAYS link pages
 * ALWAYS append `wiki/log.md` when completing any operation defined in this document (each run leaves a trace; use pass / no-op when that operation allows no file changes)
-* Update `wiki/index.md` when the operation **creates, deletes, or materially changes** wiki pages or catalog-listed artifacts; when an operation’s steps are narrower (e.g. Graph: index only after graph artifacts change), **follow those steps**
+* Update `wiki/index.md` when the operation **creates, deletes, or materially changes** wiki pages, **點子集散內容**, or **`mkdocs.yml` nav**; when an operation’s steps are narrower (e.g. Graph: index only after graph artifacts change), **follow those steps**
 * Do not invent org policies, stakeholders, or “official” processes unless they appear in sources
 
 ---
@@ -453,7 +459,7 @@ Prefer OKF log format ([§7](https://github.com/GoogleCloudPlatform/knowledge-ca
 ```md
 - Ingest: specified path → archive to raw/sources/*.md → wiki (per Ingest steps)
 - Ingest all files already under raw/sources/ (one pass each; update index + log)
-- Generate FAQ from current wiki (8–15 questions, no fabricated Qs)
+- Generate FAQ from current wiki → **prefer** persist as `wiki/queries/` instead
 - Answer: <question> with citations and uncertainty markers (for me)
 - Lint the wiki
 - Build knowledge graph (e.g. wiki/graph/knowledge-map.md)

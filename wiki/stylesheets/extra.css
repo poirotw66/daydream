@@ -69,8 +69,8 @@
 
 /* Hero (injected on index) */
 .dd-hero {
-  margin: 0 0 2rem;
-  padding: 2rem 1.75rem 1.5rem;
+  margin: 0 0 1.5rem;
+  padding: 1.75rem 1.75rem 1.25rem;
   border-radius: calc(var(--dd-radius) + 4px);
   background: linear-gradient(
     135deg,
@@ -78,6 +78,15 @@
     color-mix(in srgb, var(--md-accent-fg-color) 8%, transparent)
   );
   border: 1px solid var(--dd-border);
+}
+
+.dd-hero--hub {
+  padding-bottom: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.dd-hero--hub .dd-hero__subtitle {
+  margin-bottom: 0;
 }
 
 .dd-hero__title {
@@ -92,6 +101,148 @@
   color: var(--dd-text-muted);
   font-size: 1rem;
   max-width: 42rem;
+}
+
+/* Idea hub (index body) */
+.dd-hub > h2 {
+  margin-top: 1.75rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.dd-hub > h2:first-child {
+  margin-top: 0.25rem;
+}
+
+.dd-idea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+  margin: 0.75rem 0 1rem;
+}
+
+.dd-idea-card {
+  margin: 0;
+  padding: 1.1rem 1.2rem 1rem;
+  border: 1px solid var(--dd-border);
+  border-radius: var(--dd-radius);
+  background: var(--md-default-bg-color);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.dd-idea-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgb(0 0 0 / 9%);
+}
+
+.dd-idea-card--primary {
+  border-color: color-mix(in srgb, var(--md-accent-fg-color) 45%, var(--dd-border));
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--md-accent-fg-color) 7%, var(--md-default-bg-color)),
+    var(--md-default-bg-color)
+  );
+}
+
+.dd-idea-card h3 {
+  margin: 0.35rem 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.dd-idea-card h3 a {
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.dd-idea-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.dd-idea-card p {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: var(--dd-text-muted);
+}
+
+.dd-pill {
+  display: inline-block;
+  margin: 0 0.35rem 0.25rem 0;
+  padding: 0.12em 0.55em;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  background: var(--dd-surface);
+  border: 1px solid var(--dd-border);
+  color: var(--dd-text-muted);
+}
+
+.dd-pill--active {
+  color: #6a1b9a;
+  background: #f3e5f5;
+  border-color: #ce93d8;
+}
+
+[data-md-color-scheme="slate"] .dd-pill--active {
+  color: #ce93d8;
+  background: #4a148c33;
+  border-color: #7b1fa2;
+}
+
+.dd-lanes > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0.5rem 0 0.75rem;
+  list-style: none;
+}
+
+.dd-lanes > ul > li {
+  margin: 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--dd-border);
+  border-radius: var(--dd-radius);
+  background: var(--dd-surface);
+  font-size: 0.86rem;
+  line-height: 1.45;
+}
+
+.dd-query-grid > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 0.55rem;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  list-style: none;
+}
+
+.dd-query-grid > ul > li {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  border-left: 3px solid var(--md-accent-fg-color);
+  border-radius: 0 var(--dd-radius) var(--dd-radius) 0;
+  background: var(--dd-surface);
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.dd-hub hr {
+  margin: 1.5rem 0;
+  border: none;
+  border-top: 1px solid var(--dd-border);
+}
+
+.dd-hub > p {
+  font-size: 0.88rem;
+  color: var(--dd-text-muted);
+  margin: 0.5rem 0 0;
 }
 
 .dd-hero .grid.cards {
