@@ -18,7 +18,7 @@ source_count: 3
 | 軌道 | 內容 |
 |------|------|
 | 正職 | [現職場內-agent-案子](/concepts/現職場內-agent-案子.md) |
-| 實驗 | [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md) | Kaggle [Titanic](https://www.kaggle.com/competitions/titanic) 起手 → [路徑](/queries/kaggle-經典賽與學習路徑.md) |
+| 實驗 | [ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md) | Kaggle **Titanic P0 ✓**（LB 0.81578）→ P1 House Prices → [路徑](/queries/kaggle-經典賽與學習路徑.md) |
 | 輸入 | [每日資訊收集-agent](/concepts/每日資訊收集-agent.md) |
 | 輸出 | [每日技術前沿-blog](/concepts/每日技術前沿-blog.md) | **科技前沿**（廣義）on [bloss0m-com](/entities/bloss0m-com.md) |
 | Side | [金融業-ai-agent-side-發想](/concepts/金融業-ai-agent-side-發想.md) | **金融 Agent**（垂直）；與 blog **並存** |

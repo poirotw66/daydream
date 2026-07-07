@@ -31,7 +31,7 @@ source_count: 4
 ## Open Questions
 
 - 最終提交／名次／是否兩賽皆完賽？（未知）
-- ML-Intern skill 是否封存或併入 #002 金融 eval？（未知）
+- ~~ML-Intern skill 是否封存~~ — 已收斂：ml-intern 為 Kaggle harness 方法（每賽 repo），AI CUP 脈絡封存即可。（確定）擁有者 2026-07
 
 ## Relationships
 

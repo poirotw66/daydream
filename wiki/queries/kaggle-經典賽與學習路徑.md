@@ -3,9 +3,9 @@ type: Query
 title: "Kaggle 經典賽與學習路徑？"
 description: "ml-intern harness 入門：Getting Started 賽 → 金融銜接；與 autoresearch 分工"
 tags: ["query", "kaggle", "ml-intern"]
-timestamp: 2026-06-25T18:00:00Z
+timestamp: 2026-07-06T10:00:00Z
 status: active
-source_count: 2
+source_count: 3
 ---
 
 # Kaggle 經典賽與學習路徑？
@@ -16,11 +16,23 @@ source_count: 2
 
 ## 答案（2026-06-25 survey）
 
+### P0 進度（2026-07-06 更新）
+
+| 項目 | 狀態 |
+|------|------|
+| [Titanic](https://www.kaggle.com/competitions/titanic) | **✓ 收尾** — Public LB **0.81578** |
+| Repo | [github.com/poirotw66/titanic](https://github.com/poirotw66/titanic) |
+| 復盤 | [bloss0m blog](https://www.bloss0m.com/blog/37-kaggle-titanic-survival-prediction/) |
+| 主提交 | Step 5（815 notebook FE + CatBoost）；不再追 Optuna CV 極致 |
+| 下一場 | **P1 House Prices**（回歸） |
+
+教訓（確定）：特徵工程 > 調參；CV 高 ≠ LB 高；Pipeline 防洩漏；嚴格 reproduce。（確定）[2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog](/sources/2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog.md)
+
 ### 推薦順序（確定為 wiki 建議路徑；賽事狀態以 Kaggle 為準）
 
 | 階段 | 競賽 | 類型 | 為何適合 ml-intern harness |
 |------|------|------|---------------------------|
-| **P0 起手** | [Titanic](https://www.kaggle.com/competitions/titanic) | 二分類 tabular | Getting Started、永不關閉、小數據；練 **baseline → 特徵 → 提交 log → 可重跑 Pipeline** |
+| **P0 起手** | [Titanic](https://www.kaggle.com/competitions/titanic) | 二分類 tabular | **✓ 完成**（LB 0.81578）；練 baseline → 特徵 → 提交 log → Pipeline |
 | **P1** | [House Prices](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques) | 回歸 tabular | 補齊回歸、缺失值、高維類別特徵、CV |
 | **P2** | [Digit Recognizer](https://www.kaggle.com/competitions/digit-recognizer) | 影像 / MNIST | 若要走 CNN／深度學習入門（可選） |
 | **P2b** | [Spaceship Titanic](https://www.kaggle.com/competitions/spaceship-titanic) | 現代 tabular 分類 | Titanic 進階版、pipeline 思維 |
@@ -50,7 +62,7 @@ autoresearch 核心檔：`prepare.py`（固定）、`train.py`（agent 改）、
 ## 不確定
 
 - 擁有者本機 GPU 型號與是否跑 full autoresearch。（未知）
-- P0 是否直接從 Spaceship Titanic 跳過 Titanic。（未知）
+- P1 House Prices 開跑時程。（未知）
 
 ## Relationships
 
@@ -61,5 +73,6 @@ autoresearch 核心檔：`prepare.py`（固定）、`train.py`（agent 改）、
 # Citations
 
 [1] [2026-06-25-kaggle路徑與輸出分工](/sources/2026-06-25-kaggle路徑與輸出分工.md) — `raw/sources/2026-06-25-kaggle路徑與輸出分工.md`
-[2] [Kaggle Competitions](https://www.kaggle.com/competitions) — Getting Started 賽事列表（外部）
-[3] [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — README（外部）
+[2] [2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog](/sources/2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog.md) — `raw/sources/2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog.md`
+[3] [Kaggle Competitions](https://www.kaggle.com/competitions) — Getting Started 賽事列表（外部）
+[4] [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — README（外部）

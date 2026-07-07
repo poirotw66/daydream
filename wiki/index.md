@@ -45,7 +45,7 @@ IEEE-CIS 公開資料；human-in-the-loop 調查備忘錄，不自主攔截。
 <div class="dd-lanes" markdown>
 
 - :material-briefcase-account: **[正職](/concepts/現職場內-agent-案子.md)** — 場內 Agent 案子
-- :material-chart-timeline-variant: **[實驗](/concepts/ml-intern-autoresearch-路線.md)** — Kaggle → autoresearch
+- :material-chart-timeline-variant: **[實驗](/concepts/ml-intern-autoresearch-路線.md)** — Titanic P0 ✓（LB 0.816）→ House Prices
 - :material-newspaper-variant-outline: **[輸出](/concepts/每日技術前沿-blog.md)** — 每日技術 blog
 - :material-bank-outline: **[Side](/concepts/金融業-ai-agent-side-發想.md)** — 金融 Agent 垂直實作
 
@@ -60,7 +60,7 @@ IEEE-CIS 公開資料；human-in-the-loop 調查備忘錄，不自主攔截。
 <div class="dd-query-grid" markdown>
 
 - **[金融 Agent 有哪些場景？](/queries/金融業-agent-應用探索.md)** — 場景地圖、法遵約束、#002／#003 比較
-- **[Kaggle 從哪場賽起步？](/queries/kaggle-經典賽與學習路徑.md)** — Titanic → IEEE-CIS 銜接
+- **[Kaggle 從哪場賽起步？](/queries/kaggle-經典賽與學習路徑.md)** — Titanic ✓ → House Prices → IEEE-CIS
 - **[平日 4h 怎麼切？](/queries/平日時間與三線並行.md)** — 實驗／Side／blog 並行
 
 </div>

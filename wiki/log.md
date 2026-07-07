@@ -166,3 +166,13 @@ Chronological, append-only operational log.
 * **Update**: [mkdocs.yml](../mkdocs.yml) nav「已暫停」區塊；[#002](/projects/ideas/2026-06-25-002-公開法規-agentic-rag.md) 連結改 bundle-relative
 * **Update**: [README.md](../README.md) 補 #003
 * **Delete**: `wiki/faq/`（含 `.gitkeep`）
+
+## [2026-07-06] ingest | Kaggle Titanic P0 收尾
+
+* **Archive**: `raw/sources/2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog.md`
+* **Creation**: [2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog](/sources/2026-07-06-kaggle-titanic-survival-prediction-bloss0m-blog.md)
+* **Update**: [kaggle](/entities/kaggle.md)、[ml-intern-參賽方法](/entities/ml-intern-參賽方法.md)、[ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md)、[kaggle-經典賽與學習路徑](/queries/kaggle-經典賽與學習路徑.md)、[bloss0m-com](/entities/bloss0m-com.md)、[年底轉職-agent-準備](/concepts/年底轉職-agent-準備.md)、[index](/index.md)、[README.md](../README.md)、[mkdocs.yml](../mkdocs.yml)
+
+## [2026-07-07] clarify | ml-intern 非 skill 命名待辦
+
+* **Update**: [ml-intern-參賽方法](/entities/ml-intern-參賽方法.md)、[ml-intern-autoresearch-路線](/concepts/ml-intern-autoresearch-路線.md) — 收斂「skill subcommand 命名」；ml-intern = 方法＋每賽 repo（如 titanic/train.py）
